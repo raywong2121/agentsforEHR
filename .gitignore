@@ -1,0 +1,50 @@
+# Credentials and local authorization
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+cookies*
+session_state*
+storage_state*
+
+# Local data and database dumps; keep synthetic fixtures under examples/tests
+private/
+local/
+data/
+patients/
+records/
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+
+# Python/runtime products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# OS/editor/cache files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
+*.log
+
+# Local render/cache products, not research evidence
+qa/render*/
+.cache/
