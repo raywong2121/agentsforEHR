@@ -1,0 +1,147 @@
+{
+  "scope": "Offline E91 controls using minimized TEST-vocabulary derivative fixtures; synthetic replies are engineering only; not an exact archival or clinical replay",
+  "runtime_file": "./src/term_runtime.py",
+  "runtime_sha256": "5cb50e08114fabdaadfb623c2e916e1f1bd077ace4a14ec6392d6cd24a0fdfd7",
+  "script_sha256": "541df221c4a10325272095f50953079c508b54ba0637e5c8c14dd7e6c383b68e",
+  "uses_legacy_quoted_contract": false,
+  "passed": true,
+  "passed_count": 17,
+  "failed_count": 0,
+  "controls": [
+    {
+      "control": "K01_reply_note_and_neighbor_scope_do_not_split_business_gap",
+      "passed": true,
+      "detail": {
+        "same_gap_one_issue_across_quote_and_call_scope": true
+      }
+    },
+    {
+      "control": "K02_new_binding_revision_is_not_merged_with_old_gap",
+      "passed": true,
+      "detail": {
+        "both_revisions_retained": true
+      }
+    },
+    {
+      "control": "K03_genuine_association_negative_is_not_merged_into_Eq_calibration",
+      "passed": true,
+      "detail": {
+        "association_hard_and_Eq_gap_separate": true
+      }
+    },
+    {
+      "control": "K04_simultaneous_direction_negative_and_formal_Eq_gap_one_task",
+      "passed": true,
+      "detail": {
+        "one_calibration_task_preserves_native_direction_negative": true
+      }
+    },
+    {
+      "control": "K05_repeated_feedback_does_not_reset_attempts_or_create_work",
+      "passed": true,
+      "detail": {
+        "same_gap_attempt_limit_retained": true
+      }
+    },
+    {
+      "control": "K06_only_relevant_new_evidence_reopens_existing_gap",
+      "passed": true,
+      "detail": {
+        "synthetic_generation_fixture": true,
+        "receipt_only_does_not_reset": true,
+        "relevant_meaning_reopens_same_business_key": true
+      }
+    },
+    {
+      "control": "R01_foreign_binding_candidate_ref_cannot_support_current_binding",
+      "passed": true,
+      "detail": {
+        "foreign_binding_reference_rejected": true
+      }
+    },
+    {
+      "control": "R02_old_vocabulary_version_reference_cannot_be_reused",
+      "passed": true,
+      "detail": {
+        "old_vocabulary_reference_rejected": true,
+        "synthetic_row_version_fixture": true
+      }
+    },
+    {
+      "control": "R03_old_source_snapshot_reference_cannot_alias_current_row",
+      "passed": true,
+      "detail": {
+        "old_source_snapshot_reference_rejected": true,
+        "synthetic_snapshot_identity_fixture": true
+      }
+    },
+    {
+      "control": "R04_legal_identity_negative_survives_bad_basis_reference",
+      "passed": true,
+      "detail": {
+        "invalid_basis_cannot_hide_native_negative": true
+      }
+    },
+    {
+      "control": "R05_invalid_candidate_identity_does_not_fabricate_medical_negative",
+      "passed": true,
+      "detail": {
+        "invalid_identity_contract_only": true
+      }
+    },
+    {
+      "control": "R06_only_failed_binding_contract_is_retried_accepted_neighbors_retained",
+      "passed": true,
+      "detail": {
+        "only_missing_binding_retried": true,
+        "synthetic_contract_recovery_not_semantic_repair": true,
+        "neighbor_count": 4
+      }
+    },
+    {
+      "control": "Q01_real_archival_partial_accepts_neighbors_and_next_only_omitted",
+      "passed": true,
+      "detail": {
+        "fixture_partial_targets": [
+          "t2",
+          "t3"
+        ],
+        "next_only_omitted_targets": [
+          "t1",
+          "t4",
+          "t5"
+        ],
+        "new_model_calls": 0
+      }
+    },
+    {
+      "control": "Q02_remaining_queue_then_later_review_closes_engineering_fixture",
+      "passed": true,
+      "detail": {
+        "synthetic_later_Planner_and_Reviewer": true,
+        "actual_semantic_repairs": 0
+      }
+    },
+    {
+      "control": "Q03_historical_actual_W6_never_gets_seventh_wave",
+      "passed": true,
+      "detail": {
+        "budget_exhaustion_not_relabelled_repaired": true
+      }
+    },
+    {
+      "control": "S01_reference_reduction_does_not_weaken_strict_Eq",
+      "passed": true,
+      "detail": {
+        "strict_Eq_not_proved_by_refs_labels_or_votes": true
+      }
+    },
+    {
+      "control": "S02_runtime_remained_frozen_through_suite",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "new_model_calls": 0,
+  "actual_semantic_repairs": 0
+}

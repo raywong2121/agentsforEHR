@@ -1,0 +1,27 @@
+{
+  "scope": "Public repository documentation path checks; no service calls",
+  "checked_files": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/research-status.md",
+    "NOTICE.md",
+    "CITATION.cff",
+    ".gitignore",
+    "requirements-dev.txt"
+  ],
+  "relative_links_checked": 19,
+  "missing_links": [],
+  "prepare_smoke_outputs": [
+    "policy_json",
+    "source_json",
+    "state_json"
+  ],
+  "license_added": false,
+  "publication_url": "https://github.com/raywong2121/agentsforEHR",
+  "publication_existence": "not verified by documentation author; root must verify actual creation",
+  "repository_url": "https://github.com/raywong2121/agentsforEHR",
+  "repository_metadata_verified": true,
+  "visibility": "public",
+  "write_permission_verified": true,
+  "upload_status": "not_yet_uploaded"
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-27",
+  "checks_scope": "Local source preparation only. No live import or model/database call.",
+  "source_yaml_sha256": "26f373d6ce1ff8772950a77ca89cdaf8fb21ac9b61584402b916e3becc7d9164",
+  "public_yaml_sha256": "5e100fa704464fb6d82a9eef55d01cac4510bbf5129800cf775c2ec2d581acc0",
+  "source_yaml_parser": "Ruby standard-library Psych safe_load with aliases enabled; bundled Python had no PyYAML; no packages installed.",
+  "exact_structural_delta_paths": [
+    "/app/description",
+    "/app/name",
+    "/workflow/graph/nodes/9/data/provider_icon"
+  ],
+  "all_runtime_nodes_match_public_source": [
+    {
+      "node_id": "cs_prepare",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_initialize",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_plan",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_normalize",
+      "matches_public_core": true,
+      "source": "receipt_normalizer"
+    },
+    {
+      "node_id": "cs_applysearch",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_applyreview",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_abort",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_finish",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_view",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_stageaudit",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    },
+    {
+      "node_id": "cs_preabort",
+      "matches_public_core": true,
+      "source": "term_runtime_and_rule_json"
+    }
+  ],
+  "sql_matches_export": true,
+  "python_ast_parse": "passed",
+  "allowlisted_public_scan_counts": {
+    "url": 0,
+    "ipv4": 0,
+    "mac_path": 0,
+    "email": 0,
+    "tenant_param": 0,
+    "hidden_reasoning_marker": 0,
+    "credential_token": 0
+  },
+  "required_ohdsi_public_tables": [
+    "concept",
+    "concept_relationship",
+    "concept_synonym",
+    "relationship",
+    "vocabulary"
+  ],
+  "not_covered": [
+    "No claim of exhaustive secret detection; main task performs independent package audit.",
+    "No new DSL import acceptance.",
+    "No database schema availability test.",
+    "No current model/service availability test.",
+    "No semantic medical evaluation."
+  ],
+  "prompt_text_comparison": [
+    {
+      "node_id": "cs_decompose",
+      "role": "system",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "common introduction + node SYSTEM section",
+      "actual_text_sha256": "d58707f95d15644f945464ab43bc163f66dd59bb293701affd83b524398c4d0f"
+    },
+    {
+      "node_id": "cs_decompose",
+      "role": "user",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "node USER section",
+      "actual_text_sha256": "3328fb211edcc89572a1726fdb044f476151da4555e171aa8309156c1cc35504"
+    },
+    {
+      "node_id": "cs_planner",
+      "role": "system",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "common introduction + node SYSTEM section",
+      "actual_text_sha256": "ad578e20a15b036942dbabe01edeeb4fc4c213b0c358e7f499e516ef4f442d3d"
+    },
+    {
+      "node_id": "cs_planner",
+      "role": "user",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "node USER section",
+      "actual_text_sha256": "98ac0ef41d3b5e1a4e9ad997f573bc242ad376e0ea8a9b2225a4f07755be5dba"
+    },
+    {
+      "node_id": "cs_reviewer",
+      "role": "system",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "common introduction + node SYSTEM section",
+      "actual_text_sha256": "324a5d515b0a8652f9ac0b149e6cd65c97df441300a16528b030a3b571d148a3"
+    },
+    {
+      "node_id": "cs_reviewer",
+      "role": "user",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "node USER section",
+      "actual_text_sha256": "21b3a355c06db35ec29374b66591c55ca9882eee46f9466ea8d45c93a33e14c5"
+    },
+    {
+      "node_id": "cs_sourceaudit",
+      "role": "system",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "common introduction + node SYSTEM section",
+      "actual_text_sha256": "bd052f42e8acec4f67c384cd231ba80401b7dbdac667418f2777c8449823643a"
+    },
+    {
+      "node_id": "cs_sourceaudit",
+      "role": "user",
+      "matches_archived_prompt_assembly": true,
+      "assembly": "node USER section",
+      "actual_text_sha256": "28228d866b823eec801dc42056d4b64a3e1ba9b7973543c1c8a51ec633c5e0af"
+    }
+  ]
+}

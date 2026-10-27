@@ -1,0 +1,332 @@
+{
+  "review_date": "2026-10-27",
+  "generated_utc": "2026-10-27T03:05:55.299402+00:00",
+  "scope": "Independent offline pre-publication text, configuration, fixture and documentation review of all regular files in the working repository, excluding Git internals, interpreter caches and this report. No Dify, database, model, GitHub or other service calls were made by the reviewer; no core logic or publication file was edited.",
+  "repository_root": ".",
+  "expected_public_repository_url": "https://github.com/raywong2121/agentsforEHR",
+  "reviewed_file_count": 36,
+  "reviewed_total_bytes": 2966729,
+  "reviewed_files": [
+    {
+      "file": ".gitignore",
+      "sha256": "8dd4065030845b8a1c938fd47823176a6861d996b2e59aa7a628248c39ff8ba3",
+      "bytes": 587
+    },
+    {
+      "file": "CITATION.cff",
+      "sha256": "c4882f19a1ed35e9595799e8a66e17335820a7820d0233f8fa0c550856973216",
+      "bytes": 1036
+    },
+    {
+      "file": "NOTICE.md",
+      "sha256": "18ef3f734ffd55909bd2ff3459897f98990a89de7a40159b9fa3505f4d77de0f",
+      "bytes": 2021
+    },
+    {
+      "file": "README.md",
+      "sha256": "d077fadd8549c68a1a9b522e0c76b8fedd16003400217d0b2475d78d8943427e",
+      "bytes": 8540
+    },
+    {
+      "file": "artifacts/contracts-first.json",
+      "sha256": "0f5917061683ab75ca4676d92bb6ece7c4963399d87e9f594636716435399ff1",
+      "bytes": 4282
+    },
+    {
+      "file": "artifacts/documentation-checks.json",
+      "sha256": "3f63538d3eb418127e2dccce5ff2f8e9d7e1a60f083cf6589e31514b08c1d74b",
+      "bytes": 811
+    },
+    {
+      "file": "artifacts/offline-tests-final.json",
+      "sha256": "964234a389b4d5f6877a896d07917b3dca5997083bb8b2f36049f8cb82862605",
+      "bytes": 64490
+    },
+    {
+      "file": "artifacts/offline-tests-public-final.json",
+      "sha256": "a5975f13ef360e456e1937d7203943945b69ada3572c4d9cd44c35756bff0a8b",
+      "bytes": 64490
+    },
+    {
+      "file": "artifacts/offline-tests-release-check.json",
+      "sha256": "e16380318527ad8518bf020f11dd67ad4a12c93ce4497cf32f354bc2d14cdacd",
+      "bytes": 66013
+    },
+    {
+      "file": "artifacts/references-first.json",
+      "sha256": "172dfe8b63d6f5a740ba3395ea7c023f3e40194d945a72bf621b350675d60b0b",
+      "bytes": 53404
+    },
+    {
+      "file": "dify/configuration_summary.json",
+      "sha256": "5ea251bc0e0598728196fa00706197771d504cff9478b59e06005bd5536fefc4",
+      "bytes": 8914
+    },
+    {
+      "file": "dify/e91.public.yml",
+      "sha256": "5e100fa704464fb6d82a9eef55d01cac4510bbf5129800cf775c2ec2d581acc0",
+      "bytes": 2293628
+    },
+    {
+      "file": "dify/node_entrypoints.json",
+      "sha256": "ff5758b2e77c0e09499021980603ea380935376d794fe1a0b0a0ba1fdfe930ca",
+      "bytes": 14824
+    },
+    {
+      "file": "docs/architecture.md",
+      "sha256": "197816782500d8021d85d87f33a5d94f8ee56fd1c053c5fc11fd138397edd882",
+      "bytes": 5870
+    },
+    {
+      "file": "docs/offline-tests.md",
+      "sha256": "9aa2e352aefc524b5459bf1ec763d84aedc1f4536f23a9a514a35a3984be72dd",
+      "bytes": 5895
+    },
+    {
+      "file": "docs/research-status.md",
+      "sha256": "8d975c9cbfe70ce801d90fcf1c7f23fc8b13eac062b31959efcadca53543e50e",
+      "bytes": 4884
+    },
+    {
+      "file": "examples/synthetic_cases.json",
+      "sha256": "1ddd39089d72fec487973b358b53ad2ba14c2d2b404dd5e9eda3fada3aa9e2e7",
+      "bytes": 1042
+    },
+    {
+      "file": "fixtures/PROVENANCE.json",
+      "sha256": "f6440b32c3c020a2ff6bb701d5ab7c7b8ef0e47bb66da146ac4444f40138006f",
+      "bytes": 2198
+    },
+    {
+      "file": "fixtures/cross_process.json",
+      "sha256": "c960d399289327cf191528a5e0e4fd6189a11c6a914423da34e9e0e2424fe566",
+      "bytes": 21398
+    },
+    {
+      "file": "fixtures/partial_selection.json",
+      "sha256": "be6985d3fbb3fd88cb61871cced6396bb008fcd945361d63efd7805f29b7fe61",
+      "bytes": 1052
+    },
+    {
+      "file": "fixtures/review_ready.json",
+      "sha256": "923ac0dbd2505d6bb6cb30a964022f968bf9cb28c42360ad105f38fbcf8b7a6a",
+      "bytes": 25728
+    },
+    {
+      "file": "prompts/PROMPTS.md",
+      "sha256": "b47461114af594e9eae806b325cbffaaad220654f326d9975ee7e412db95c537",
+      "bytes": 12983
+    },
+    {
+      "file": "prompts/actual_node_prompts.json",
+      "sha256": "9f9a03ef9092d41a400cb30d54bfbe35da7798edd783935df9fdd89a54ff0fce",
+      "bytes": 16443
+    },
+    {
+      "file": "provenance/core_manifest.json",
+      "sha256": "8cd9eb51de126590868aff8e1606f187dd6d80cffbdf14275c55cde13985e883",
+      "bytes": 4746
+    },
+    {
+      "file": "provenance/core_notes.md",
+      "sha256": "aff207d5402ef6276dd700f226b672795181715e82ba9fd74bd4f8574a1c15ce",
+      "bytes": 5555
+    },
+    {
+      "file": "provenance/core_preparation_checks.json",
+      "sha256": "4210f443203eeeef20ed57b9b50d3622e1ee9a87a50f18b3cf273aef679bceeb",
+      "bytes": 4807
+    },
+    {
+      "file": "requirements-dev.txt",
+      "sha256": "59c1c3fbd4c3407f0d4afa9d3fc6f244702944e1c5380bc0938df74c91c4e0ec",
+      "bytes": 273
+    },
+    {
+      "file": "sql/vocabulary_search.sql",
+      "sha256": "1cbac6eecf98104a624ee129649e2486390b471887292c3bf1bfa0fca88dbbe0",
+      "bytes": 21024
+    },
+    {
+      "file": "src/__init__.py",
+      "sha256": "777004e8153ec6364616b73ee88c9817e48f6e2a39dd499ae38f27f5a56bc6fd",
+      "bytes": 79
+    },
+    {
+      "file": "src/receipt_normalizer.py",
+      "sha256": "608dd23ad5d8c2a7ff59f7ab908df2b740b7f0bb371c2024cf6871a65f40f991",
+      "bytes": 30516
+    },
+    {
+      "file": "src/rule_json.py",
+      "sha256": "59220f7d4ac10eaaa2bbc93dfdc5fef68373f762be7dece35485aaac065253f1",
+      "bytes": 13881
+    },
+    {
+      "file": "src/term_runtime.py",
+      "sha256": "5cb50e08114fabdaadfb623c2e916e1f1bd077ace4a14ec6392d6cd24a0fdfd7",
+      "bytes": 175062
+    },
+    {
+      "file": "tests/run_offline_suite.py",
+      "sha256": "5ccacda19ce774d57ccdcffedfcfef0b6812548530e1f7d6813274d457956e20",
+      "bytes": 2405
+    },
+    {
+      "file": "tests/test_contracts.py",
+      "sha256": "1df3cbe2becf201150254b4e607da97f8d34d449e0a0d0136143684767ce5441",
+      "bytes": 20626
+    },
+    {
+      "file": "tests/test_json_recovery.py",
+      "sha256": "ccf7c2510b19e419c49753504b5acb3ded520ae27b9768f740f03ee607d8a762",
+      "bytes": 2741
+    },
+    {
+      "file": "tests/test_reference_stability.py",
+      "sha256": "62f84320776dd6a55f7610da69c2d25a66a1d8ab586b55c7221285f02133a442",
+      "bytes": 4481
+    }
+  ],
+  "unresolved_findings": [],
+  "resolved_findings": [
+    {
+      "file": "artifacts/contracts-first.json",
+      "line": 3,
+      "type": "local_absolute_path_removed_from_public_derivative_receipt"
+    },
+    {
+      "file": "README.md",
+      "line": 23,
+      "type": "current_fixture_receipt_link_corrected"
+    }
+  ],
+  "false_positives_retained": [
+    {
+      "file": "dify/e91.public.yml",
+      "line": 6766,
+      "type": "public_boolean_configuration_not_secret"
+    }
+  ],
+  "fixture_checks": [
+    {
+      "file": "fixtures/review_ready.json",
+      "invented_vocabulary_identity_fields_verified": true,
+      "no_raw_or_long_model_narrative_fields_detected": true
+    },
+    {
+      "file": "fixtures/cross_process.json",
+      "invented_vocabulary_identity_fields_verified": true,
+      "no_raw_or_long_model_narrative_fields_detected": true
+    },
+    {
+      "file": "fixtures/partial_selection.json",
+      "invented_vocabulary_identity_fields_verified": true,
+      "no_raw_or_long_model_narrative_fields_detected": true
+    }
+  ],
+  "offline_receipt_checks": [
+    {
+      "file": "artifacts/offline-tests-public-final.json",
+      "passed": true,
+      "tests_run": 26,
+      "failure_count": 0,
+      "error_count": 0,
+      "contracts_count": 17,
+      "contracts_all_passed": true,
+      "reference_processes": 8,
+      "current_ref_sets": 1,
+      "legacy_mutation_snapshots": 2,
+      "new_model_calls": 0,
+      "services_called": 0,
+      "actual_semantic_repairs": 0,
+      "current_hash_bindings": [
+        {
+          "file": "src/term_runtime.py",
+          "matches": true
+        },
+        {
+          "file": "src/rule_json.py",
+          "matches": true
+        },
+        {
+          "file": "fixtures/PROVENANCE.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/cross_process.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/partial_selection.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/review_ready.json",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "artifacts/offline-tests-release-check.json",
+      "passed": true,
+      "tests_run": 26,
+      "failure_count": 0,
+      "error_count": 0,
+      "contracts_count": 17,
+      "contracts_all_passed": true,
+      "reference_processes": 8,
+      "current_ref_sets": 1,
+      "legacy_mutation_snapshots": 2,
+      "new_model_calls": 0,
+      "services_called": 0,
+      "actual_semantic_repairs": 0,
+      "current_hash_bindings": [
+        {
+          "file": "src/term_runtime.py",
+          "matches": true
+        },
+        {
+          "file": "src/rule_json.py",
+          "matches": true
+        },
+        {
+          "file": "fixtures/PROVENANCE.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/cross_process.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/partial_selection.json",
+          "matches": true
+        },
+        {
+          "file": "fixtures/review_ready.json",
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "documentation_claim_review": {
+    "claims_consistent_with_reviewed_sources_and_receipts": true,
+    "new_live_integration_or_clinical_validation_not_claimed": true,
+    "historical_and_current_receipts_distinguished": true,
+    "no_cross_case_learning_or_OMOP_export_claimed": true,
+    "typed_SQL6_vs_runtime8_contract_conflict_disclosed_not_repaired": true,
+    "source_parser_patterns_and_public_plugin_identifiers_retained": true,
+    "license_not_invented_or_added": true
+  },
+  "noted_scope_limits": [
+    "Pattern scanning and manual review cannot prove absence of every unknown or encoded secret; opaque future changes require another review.",
+    "Only checked-in candidate files at these hashes are covered; Git history, remote repository state, authorization, branches and actual destination import were not audited by this reviewer.",
+    "Synthetic source inputs and minimized derivative fixtures were reviewed as research/testing material, not as medical gold-standard labels or a complete vocabulary release.",
+    "Offline pass claims were checked against receipts and current source/fixture hashes; the reviewer did not independently rerun tests or perform model, SQL, Dify or clinical validation.",
+    "Legal ownership, third-party license permissions and de-identification completeness cannot be established solely by automated text checks.",
+    "No actual suspected credential value or original private absolute locator is recorded in this review."
+  ],
+  "files_changed_during_audit": [],
+  "passed_for_reviewed_scope": true,
+  "publication_approval_scope": "No unresolved disclosure or documentation finding was found in the listed file snapshot. This is a bounded pre-publication review, not a guarantee of exhaustive secret detection or clinical validity."
+}

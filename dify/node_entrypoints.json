@@ -1,0 +1,511 @@
+[
+  {
+    "node_id": "cs_prepare",
+    "title": "保留完整原文与行号",
+    "code_sha256": "281dcad1c62b9149d20acbfb545dce834626b377914e6d9a526a041214250601",
+    "main_wrapper": "def main(case_text: str, question: str = \"\", strategy_memory_str: str = \"\") -> dict:\n    return prepare(case_text, question, strategy_memory_str)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_start",
+          "case_text"
+        ],
+        "variable": "case_text"
+      },
+      {
+        "value_selector": [
+          "cs_start",
+          "question"
+        ],
+        "variable": "question"
+      },
+      {
+        "value_selector": [
+          "cs_start",
+          "strategy_memory_str"
+        ],
+        "variable": "strategy_memory_str"
+      }
+    ],
+    "outputs": {
+      "policy_json": {
+        "children": null,
+        "type": "string"
+      },
+      "source_json": {
+        "children": null,
+        "type": "string"
+      },
+      "state_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "node_id": "cs_initialize",
+    "title": "逐字来源检查与紧凑状态",
+    "code_sha256": "ee8c74ec1b5934a5280e16e8950cc65dc0f6812f059b0ccd71f132eca8890aa4",
+    "main_wrapper": "def main(state_json: str, representation_json: str) -> dict:\n    return initialize(state_json, representation_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_view",
+          "state_json"
+        ],
+        "variable": "state_json"
+      },
+      {
+        "value_selector": [
+          "cs_decompose",
+          "text"
+        ],
+        "variable": "representation_json"
+      }
+    ],
+    "outputs": {
+      "action": {
+        "children": null,
+        "type": "string"
+      },
+      "batch_id": {
+        "children": null,
+        "type": "string"
+      },
+      "budget_json": {
+        "children": null,
+        "type": "string"
+      },
+      "decompose_json": {
+        "children": null,
+        "type": "string"
+      },
+      "dispatch": {
+        "children": null,
+        "type": "string"
+      },
+      "is_decompose": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_planner": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_review": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_search": {
+        "children": null,
+        "type": "boolean"
+      },
+      "planner_json": {
+        "children": null,
+        "type": "string"
+      },
+      "reviewer_json": {
+        "children": null,
+        "type": "string"
+      },
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      },
+      "terms_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "node_id": "cs_plan",
+    "title": "绑定、拒案与查询预算门禁",
+    "code_sha256": "1aed938153e0539613a026e8f696bc5246686278d88706c29f55e4f307ac5b80",
+    "main_wrapper": "def main(state_json: str, decision_json: str) -> dict:\n    return plan(state_json, decision_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_view",
+          "state_json"
+        ],
+        "variable": "state_json"
+      },
+      {
+        "value_selector": [
+          "cs_planner",
+          "text"
+        ],
+        "variable": "decision_json"
+      }
+    ],
+    "outputs": {
+      "action": {
+        "children": null,
+        "type": "string"
+      },
+      "batch_id": {
+        "children": null,
+        "type": "string"
+      },
+      "budget_json": {
+        "children": null,
+        "type": "string"
+      },
+      "decompose_json": {
+        "children": null,
+        "type": "string"
+      },
+      "dispatch": {
+        "children": null,
+        "type": "string"
+      },
+      "is_decompose": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_planner": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_review": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_search": {
+        "children": null,
+        "type": "boolean"
+      },
+      "planner_json": {
+        "children": null,
+        "type": "string"
+      },
+      "reviewer_json": {
+        "children": null,
+        "type": "string"
+      },
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      },
+      "terms_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "node_id": "cs_normalize",
+    "title": "核验真实数据库回执",
+    "code_sha256": "608dd23ad5d8c2a7ff59f7ab908df2b740b7f0bb371c2024cf6871a65f40f991",
+    "main_wrapper": "def main(batch_id: str, terms_json: str, plugin_json=None,\n         plugin_data=None, plugin_columns=None) -> dict:\n    # The existing Dify selectors stay unchanged: terms_json now carries the\n    # Code-owned typed envelope, still a String. No driver error text is copied.\n    request, terms = None, []\n    safe_batch_id = batch_id if isinstance(batch_id, str) and len(batch_id) <= 80 else \"invalid_batch\"\n    try:\n        if not isinstance(batch_id, str) or not batch_id or len(batch_id) > 80:\n            raise ValueError(\"invalid_batch_id\")\n        request, legacy = _request(terms_json)\n        terms = request.get(\"terms\", [])\n        rows = _plugin_rows(plugin_json, plugin_data, plugin_columns)\n        if len(rows) != 1 or not isinstance(rows[0], dict) or set(rows[0]) != {\"receipt_text\"}:\n            raise ValueError(\"invalid_plugin_rows\")\n        raw = _parse(rows[0][\"receipt_text\"])\n        receipt = _normalize(batch_id, terms, raw)\n        if legacy and isinstance(raw, dict) and \"extension_schema_version\" not in raw:\n            bundles, scope = [], {\"mode\": \"search\", \"selection_policy\": \"legacy_no_meaning_extension\",\n                \"selected_concept_ids\": [], \"eligible_count\": None, \"cap\": 6, \"truncated\": False}\n        else:\n            bundles, scope = _meaning_extension(raw, receipt, request)\n        receipt.update(mode=request[\"mode\"], input_request=request,\n                       meaning_scope=scope, meaning_evidence=bundles,\n                       meaning_schema_version=MEANING_SCHEMA,\n                       meaning_evidence_semantics=\"actual untyped lexical and direct-relationship evidence; not text definition or source equivalence\")\n        return {\"batch_receipt_json\": json.dumps(receipt, ensure_ascii=False), \"query_ok\": True, \"error_code\": \"\"}\n    except Exception as error:\n        safe_code = str(error) if type(error) is ValueError and str(error) in SAFE_ERROR_CODES else \"invalid_query_receipt\"\n        receipt = {\"batch_id\": safe_batch_id, \"mode\": request.get(\"mode\") if request else None,\n                   \"input_request\": request, \"terms\": terms, \"verification_date\": None,\n                   \"cap\": 50, \"cap_scope\": \"per_term\", \"returned_count\": 0, \"truncated\": False,\n                   \"term_results\": [], \"error\": \"query_failed\", \"concepts\": [], \"relationships\": [],\n                   \"vocabulary_versions\": [], \"retrieval_evidence\": [], \"metadata_warnings\": [],\n                   \"meaning_scope\": None, \"meaning_evidence\": [], \"error_code\": safe_code, \"exhaustive\": False}\n        return {\"batch_receipt_json\": json.dumps(receipt, ensure_ascii=False), \"query_ok\": False, \"error_code\": safe_code}",
+    "module": "receipt_normalizer",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "batch_id"
+        ],
+        "variable": "batch_id"
+      },
+      {
+        "value_selector": [
+          "cs_loop",
+          "terms_json"
+        ],
+        "variable": "terms_json"
+      },
+      {
+        "value_selector": [
+          "cs_pg",
+          "json"
+        ],
+        "variable": "plugin_json"
+      }
+    ],
+    "outputs": {
+      "batch_receipt_json": {
+        "children": null,
+        "type": "string"
+      },
+      "error_code": {
+        "children": null,
+        "type": "string"
+      },
+      "query_ok": {
+        "children": null,
+        "type": "boolean"
+      }
+    }
+  },
+  {
+    "node_id": "cs_applysearch",
+    "title": "应用回执并保留失败反馈",
+    "code_sha256": "93ff4ab328bb9266d5c0e626532d7a765b988ef3d3a744baacdb4eb26b825ba3",
+    "main_wrapper": "def main(state_json: str, batch_receipt_json: str) -> dict:\n    return apply_search(state_json, batch_receipt_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "state_json"
+        ],
+        "variable": "state_json"
+      },
+      {
+        "value_selector": [
+          "cs_normalize",
+          "batch_receipt_json"
+        ],
+        "variable": "batch_receipt_json"
+      }
+    ],
+    "outputs": {
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      }
+    }
+  },
+  {
+    "node_id": "cs_applyreview",
+    "title": "核验修订与公开剩余问题",
+    "code_sha256": "e2daa900350f5418b60f9d225c17c263f48910ce7d7c4797e33a4cc9befe1000",
+    "main_wrapper": "def main(state_json: str, review_json: str) -> dict:\n    return apply_review(state_json, review_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "state_json"
+        ],
+        "variable": "state_json"
+      },
+      {
+        "value_selector": [
+          "cs_reviewer",
+          "text"
+        ],
+        "variable": "review_json"
+      }
+    ],
+    "outputs": {
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      }
+    }
+  },
+  {
+    "node_id": "cs_abort",
+    "title": "请求失败：保留上一完成轮状态",
+    "code_sha256": "5a60059e0fe78296325a9f2e736fe4482209803a1ca0a8b7f33a1a7381a97856",
+    "main_wrapper": "def main(state_json: str) -> dict:\n    return abort(state_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "state_json"
+        ],
+        "variable": "state_json"
+      }
+    ],
+    "outputs": {
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      }
+    }
+  },
+  {
+    "node_id": "cs_finish",
+    "title": "可读结果与可检查的结构化输出",
+    "code_sha256": "4ebe349b79e2db4e2605671c7b3ce96119defe0e12a503bf919a424dba5eead2",
+    "main_wrapper": "def main(state_json: str) -> dict:\n    return finish(state_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "state_json"
+        ],
+        "variable": "state_json"
+      }
+    ],
+    "outputs": {
+      "policy_candidate": {
+        "children": null,
+        "type": "string"
+      },
+      "report": {
+        "children": null,
+        "type": "string"
+      },
+      "structured_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "node_id": "cs_view",
+    "title": "完整事实与精简词表视图",
+    "code_sha256": "334c319cea78493583379800a639b6bf629dc789095a4b27a990f3cfd2dbd8eb",
+    "main_wrapper": "def main(state_json: str) -> dict:\n    return model_view(state_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_loop",
+          "state_json"
+        ],
+        "variable": "state_json"
+      }
+    ],
+    "outputs": {
+      "action": {
+        "children": null,
+        "type": "string"
+      },
+      "batch_id": {
+        "children": null,
+        "type": "string"
+      },
+      "budget_json": {
+        "children": null,
+        "type": "string"
+      },
+      "decompose_json": {
+        "children": null,
+        "type": "string"
+      },
+      "dispatch": {
+        "children": null,
+        "type": "string"
+      },
+      "is_decompose": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_planner": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_review": {
+        "children": null,
+        "type": "boolean"
+      },
+      "is_search": {
+        "children": null,
+        "type": "boolean"
+      },
+      "planner_json": {
+        "children": null,
+        "type": "string"
+      },
+      "reviewer_json": {
+        "children": null,
+        "type": "string"
+      },
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      },
+      "terms_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "node_id": "cs_stageaudit",
+    "title": "保留初始事实并登记查漏候选",
+    "code_sha256": "4aec5f73b89154307ef9c3578b48178636c516aba3266db95ea7d5f4a598967f",
+    "main_wrapper": "def main(state_json: str, audit_json: str) -> dict:\n    return stage_source_audit(state_json, audit_json)",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_prepare",
+          "state_json"
+        ],
+        "variable": "state_json"
+      },
+      {
+        "value_selector": [
+          "cs_sourceaudit",
+          "text"
+        ],
+        "variable": "audit_json"
+      }
+    ],
+    "outputs": {
+      "state_json": {
+        "children": null,
+        "type": "string"
+      },
+      "stop": {
+        "children": null,
+        "type": "boolean"
+      }
+    }
+  },
+  {
+    "node_id": "cs_preabort",
+    "title": "源阶段失败：保留原文并直接输出",
+    "code_sha256": "552389839c8c852f110a2c00e97d34490ca973ecda62f51a43bb168c3bce59d1",
+    "main_wrapper": "def main(state_json: str) -> dict:\n    s = state_load(state_json)\n    s[\"stop\"] = True\n    s[\"stop_reason\"] = \"pre_loop_node_failed_source_preserved\"\n    log(s, \"pre_loop_abort\", rejected=[{\"code\":\"source_phase_failed_no_automatic_retry\"}])\n    return finish(dump(s))",
+    "module": "term_runtime",
+    "variables": [
+      {
+        "value_selector": [
+          "cs_prepare",
+          "state_json"
+        ],
+        "variable": "state_json"
+      }
+    ],
+    "outputs": {
+      "policy_candidate": {
+        "children": null,
+        "type": "string"
+      },
+      "report": {
+        "children": null,
+        "type": "string"
+      },
+      "structured_json": {
+        "children": null,
+        "type": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "scope": "Minimal synthetic engineering fixtures, not a medical vocabulary or gold-standard annotation.",
+  "fixtures": [
+    {
+      "fixture": "fixtures/review_ready.json",
+      "source_archive_basename": "E8A_N2_MAIN_W4_PLAN.actual.json",
+      "source_archive_sha256": "7924a3016eae09d14a94f899e6bf6353b43f253f05389ac2545529be6d0180d0",
+      "published_fixture_sha256": "923ac0dbd2505d6bb6cb30a964022f968bf9cb28c42360ad105f38fbcf8b7a6a",
+      "archive_is_published": false,
+      "derivation": "Retained synthetic source and machine state shape; replaced vocabulary identities and labels with TEST fixtures; removed candidate pool except bound concepts, vocabulary relationships, original model prose, histories, management metadata and raw LLM responses. This is not an exact historical state export."
+    },
+    {
+      "fixture": "fixtures/cross_process.json",
+      "source_archive_basename": "E9C_N1_EQ_FEEDBACK_W5_PLAN.actual.json",
+      "source_archive_sha256": "5fd8521e4b976dd021258eaab56c8a274a96e8d1be1a406bf51cd7c9785a38b5",
+      "published_fixture_sha256": "c960d399289327cf191528a5e0e4fd6189a11c6a914423da34e9e0e2424fe566",
+      "archive_is_published": false,
+      "derivation": "Retained synthetic source and machine state shape; replaced vocabulary identities and labels with TEST fixtures; removed candidate pool except bound concepts, vocabulary relationships, original model prose, histories, management metadata and raw LLM responses. This is not an exact historical state export."
+    }
+  ],
+  "partial_selection": "Only two target-level decisions retained from a historical partial reply; reasons replaced; raw reply omitted.",
+  "copyright_boundary": "All candidate labels, codes, vocabulary names, versions and concept IDs in published fixtures are invented TEST values; no actual OHDSI vocabulary release is distributed.",
+  "original_tests": [
+    {
+      "basename": "test_e9_contract_independent.py",
+      "sha256": "5a02da652a1c4ebbe1cc0c5a0542e2fc7a5285d526cf2e3b734a4b64c737267a"
+    },
+    {
+      "basename": "test_e9_cross_process_refs_independent.py",
+      "sha256": "91ebdb195f64d918c0c54242cc706fe457ea56c87cc7b25c21b8e49b99972304"
+    }
+  ]
+}

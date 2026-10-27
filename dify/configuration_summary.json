@@ -1,0 +1,340 @@
+{
+  "source_artifact": "E91.final.actual-export.yml",
+  "source_sha256": "26f373d6ce1ff8772950a77ca89cdaf8fb21ac9b61584402b916e3becc7d9164",
+  "public_derivative": "dify/e91.public.yml",
+  "format_version": "0.7.0",
+  "mode": "workflow",
+  "nodes": [
+    {
+      "id": "cs_start",
+      "type": "start",
+      "title": "完整合成文本与可选策略"
+    },
+    {
+      "id": "cs_prepare",
+      "type": "code",
+      "title": "保留完整原文与行号"
+    },
+    {
+      "id": "cs_decompose",
+      "type": "llm",
+      "title": "开放信息单元拆解"
+    },
+    {
+      "id": "cs_initialize",
+      "type": "code",
+      "title": "逐字来源检查与紧凑状态"
+    },
+    {
+      "id": "cs_loop",
+      "type": "loop",
+      "title": "Code模式控制与局部反馈（统一预算）"
+    },
+    {
+      "id": "cs_loopstart",
+      "type": "loop-start",
+      "title": ""
+    },
+    {
+      "id": "cs_planner",
+      "type": "llm",
+      "title": "读取最新状态并选择一次动作"
+    },
+    {
+      "id": "cs_plan",
+      "type": "code",
+      "title": "绑定、拒案与查询预算门禁"
+    },
+    {
+      "id": "cs_searchgate",
+      "type": "if-else",
+      "title": "当前Loop包：停止/真实查询/审校"
+    },
+    {
+      "id": "cs_pg",
+      "type": "tool",
+      "title": "固定参数化只读词表检索"
+    },
+    {
+      "id": "cs_normalize",
+      "type": "code",
+      "title": "核验真实数据库回执"
+    },
+    {
+      "id": "cs_applysearch",
+      "type": "code",
+      "title": "应用回执并保留失败反馈"
+    },
+    {
+      "id": "cs_assignsearch",
+      "type": "assigner",
+      "title": "写回最新查询状态"
+    },
+    {
+      "id": "cs_finishgate",
+      "type": "assigner",
+      "title": "提交当前cs_plan结果"
+    },
+    {
+      "id": "cs_assignstop",
+      "type": "assigner",
+      "title": "提交当前cs_initialize结果"
+    },
+    {
+      "id": "cs_reviewer",
+      "type": "llm",
+      "title": "独立调用审校（同Qwen模型）"
+    },
+    {
+      "id": "cs_applyreview",
+      "type": "code",
+      "title": "核验修订与公开剩余问题"
+    },
+    {
+      "id": "cs_assignreview",
+      "type": "assigner",
+      "title": "写回最新审校状态"
+    },
+    {
+      "id": "cs_abort",
+      "type": "code",
+      "title": "请求失败：保留上一完成轮状态"
+    },
+    {
+      "id": "cs_assignabort",
+      "type": "assigner",
+      "title": "失败停止且不自动重试"
+    },
+    {
+      "id": "cs_finish",
+      "type": "code",
+      "title": "可读结果与可检查的结构化输出"
+    },
+    {
+      "id": "cs_end",
+      "type": "end",
+      "title": "结果（未发布实验）"
+    },
+    {
+      "id": "cs_view",
+      "type": "code",
+      "title": "完整事实与精简词表视图"
+    },
+    {
+      "id": "cs_reviewgate",
+      "type": "if-else",
+      "title": "Code指定本次职责"
+    },
+    {
+      "id": "cs_sourceview",
+      "type": "assigner",
+      "title": "提交当前cs_view结果"
+    },
+    {
+      "id": "cs_sourceaudit",
+      "type": "llm",
+      "title": "独立原文断言盘点（不见当前答案）"
+    },
+    {
+      "id": "cs_stageaudit",
+      "type": "code",
+      "title": "保留初始事实并登记查漏候选"
+    },
+    {
+      "id": "cs_preabort",
+      "type": "code",
+      "title": "源阶段失败：保留原文并直接输出"
+    },
+    {
+      "id": "cs_preend",
+      "type": "end",
+      "title": "源阶段失败输出（未发布）"
+    },
+    {
+      "id": "cs_assignidle",
+      "type": "assigner",
+      "title": "无新增审校任务：保留当前状态结束本波"
+    }
+  ],
+  "node_count": 30,
+  "edge_count": 41,
+  "models": [
+    {
+      "node_id": "cs_decompose",
+      "completion_params": {
+        "max_tokens": 8192,
+        "reasoning_effort": "low",
+        "temperature": 0.2
+      },
+      "mode": "chat",
+      "name": "qwen3.8-max-0902",
+      "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+      "structured_output_enabled": false,
+      "reasoning_format": "separated"
+    },
+    {
+      "node_id": "cs_planner",
+      "completion_params": {
+        "max_tokens": 8192,
+        "reasoning_effort": "low",
+        "temperature": 0.2
+      },
+      "mode": "chat",
+      "name": "qwen3.8-max-0902",
+      "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+      "structured_output_enabled": false,
+      "reasoning_format": "separated"
+    },
+    {
+      "node_id": "cs_reviewer",
+      "completion_params": {
+        "max_tokens": 8192,
+        "reasoning_effort": "low",
+        "temperature": 0.2
+      },
+      "mode": "chat",
+      "name": "qwen3.8-max-0902",
+      "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+      "structured_output_enabled": false,
+      "reasoning_format": "separated"
+    },
+    {
+      "node_id": "cs_sourceaudit",
+      "completion_params": {
+        "max_tokens": 8192,
+        "reasoning_effort": "low",
+        "temperature": 0.2
+      },
+      "mode": "chat",
+      "name": "qwen3.8-max-0902",
+      "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+      "structured_output_enabled": false,
+      "reasoning_format": "separated"
+    }
+  ],
+  "dependencies": [
+    {
+      "current_identifier": null,
+      "type": "marketplace",
+      "value": {
+        "marketplace_plugin_unique_identifier": "spance/db_client_node:0.1.47@60965f21262129b75b2e01543190ab65021b75b55441532f77f88fcd7b71095d",
+        "version": null
+      }
+    },
+    {
+      "current_identifier": null,
+      "type": "marketplace",
+      "value": {
+        "marketplace_plugin_unique_identifier": "langgenius/openai_api_compatible:0.0.69@972734233bb68fce45bd92b7760a8b89f6926c2346d772ef61fa9b14374fcf2a",
+        "version": null
+      }
+    }
+  ],
+  "database_node": {
+    "node_id": "cs_pg",
+    "plugin_id": "spance/db_client_node",
+    "plugin_unique_identifier": "spance/db_client_node:0.1.47@60965f21262129b75b2e01543190ab65021b75b55441532f77f88fcd7b71095d",
+    "provider_id": "spance/db_client_node/db_client_node",
+    "tool_name": "postgres_node_5",
+    "tool_node_version": "2",
+    "is_team_authorization": true,
+    "connection_credentials_in_export": false,
+    "manual_binding_required": true,
+    "query_source": "sql/vocabulary_search.sql",
+    "arg0": {
+      "type": "mixed",
+      "value": "{{#cs_loop.terms_json#}}"
+    },
+    "other_args_null": true
+  },
+  "environment_variables": [],
+  "conversation_variables": [],
+  "loop_configuration": {
+    "break_conditions": [
+      {
+        "comparison_operator": "is",
+        "id": "085e15fe-2671-4c17-8246-79929fbcea9e",
+        "value": true,
+        "varType": "boolean",
+        "variable_selector": [
+          "cs_loop",
+          "stop"
+        ]
+      }
+    ],
+    "error_handle_mode": "terminated",
+    "height": 1000,
+    "logical_operator": "and",
+    "loop_count": 6,
+    "loop_variables": [
+      {
+        "id": "2b038c53-8a75-44f6-8cde-ca1d49fa3eb3",
+        "label": "state_json",
+        "value": [
+          "cs_stageaudit",
+          "state_json"
+        ],
+        "value_type": "variable",
+        "var_type": "string"
+      },
+      {
+        "id": "32f3b6ef-5d60-4f89-813f-1c95f910120a",
+        "label": "stop",
+        "value": false,
+        "value_type": "constant",
+        "var_type": "boolean"
+      },
+      {
+        "id": "7f04b1ee-ec4e-5bdf-9800-010f7c594cb3",
+        "label": "reviewer_json",
+        "value": "{}",
+        "value_type": "constant",
+        "var_type": "string"
+      },
+      {
+        "id": "ed27b65d-022b-51a3-8690-f8bb95da1981",
+        "label": "terms_json",
+        "value": "[]",
+        "value_type": "constant",
+        "var_type": "string"
+      },
+      {
+        "id": "54240e0b-bf6d-5c2b-b9af-cd60fa811856",
+        "label": "batch_id",
+        "value": "none",
+        "value_type": "constant",
+        "var_type": "string"
+      },
+      {
+        "id": "a1c5a708-cbf2-58ce-b49d-52f1456d0a6a",
+        "label": "is_search",
+        "value": false,
+        "value_type": "constant",
+        "var_type": "boolean"
+      },
+      {
+        "id": "f53caf90-a77a-595b-9337-49bf612e280f",
+        "label": "is_review",
+        "value": false,
+        "value_type": "constant",
+        "var_type": "boolean"
+      }
+    ],
+    "start_node_id": "cs_loopstart",
+    "title": "Code模式控制与局部反馈（统一预算）",
+    "type": "loop",
+    "width": 3580
+  },
+  "runtime_budget": {
+    "max_loop_waves": 6,
+    "max_query_batches": 3,
+    "max_terms_per_batch_default": 6,
+    "max_repair_waves": 2
+  },
+  "known_contract_risk": {
+    "runtime_strategy_max_terms_max": 8,
+    "sql_typed_search_max_terms": 6,
+    "sql_legacy_array_max_terms": 8,
+    "status": "archived unresolved; public release preserves source logic; use default <=6 for typed search"
+  }
+}

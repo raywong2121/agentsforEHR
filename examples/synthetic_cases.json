@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case_id": "N1",
+      "synthetic": true,
+      "case_text": "患者左耳轻度听力下降，否认耳痛。",
+      "question": "保留原文信息与语境，检索并审校OHDSI标准概念关联；无法证实则保留未决。",
+      "strategy_memory_str": "",
+      "source_sha256": "2be2ac9b85aa38adbf0c3c73240663c1778faf1419c67f7e74cc3c3412fcae4e",
+      "scope": "Archived synthetic downstream development case; not expert gold or a new E91 full-start run."
+    },
+    {
+      "case_id": "N2",
+      "synthetic": true,
+      "case_text": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。",
+      "question": "保留原文信息与语境，检索并审校OHDSI标准概念关联；无法证实则保留未决。",
+      "strategy_memory_str": "",
+      "source_sha256": "928b57282929694e6d6e90abd2779b189b69f98b1cbdb3568cad62b00b158194",
+      "scope": "Archived synthetic downstream development case; not expert gold or a new E91 full-start run."
+    }
+  ]
+}

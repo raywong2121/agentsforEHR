@@ -1,0 +1,5 @@
+# Offline src/ and tests/ use the Python standard library only.
+# No pip dependencies are required for:
+#   python3 -m unittest discover -s tests -v
+# Dify model and database plugins are configured separately in Dify;
+# they are not Python packages installed by this file.

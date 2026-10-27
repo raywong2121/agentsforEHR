@@ -1,0 +1,929 @@
+{
+  "schema_version": "evidence_strategy_e1",
+  "source": {
+    "case_text": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。",
+    "records": [
+      {
+        "line_no": 1,
+        "source_ref": "l1",
+        "text": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。",
+        "char_start": 0,
+        "char_end": 23
+      }
+    ],
+    "question": "完整拆解原文并保留来源、主体、肯否定、数值与单位。",
+    "source_sha256": "928b57282929694e6d6e90abd2779b189b69f98b1cbdb3568cad62b00b158194"
+  },
+  "units": [
+    {
+      "unit_id": "f1",
+      "kind": "event",
+      "label": "疼痛",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "患者",
+      "value": null,
+      "unit": null,
+      "site": "右膝",
+      "attributes": {
+        "severity": "轻度"
+      },
+      "relations": []
+    },
+    {
+      "unit_id": "f2",
+      "kind": "event",
+      "label": "糖尿病",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "其母",
+      "value": null,
+      "unit": null,
+      "site": null,
+      "attributes": {},
+      "relations": []
+    },
+    {
+      "unit_id": "f3",
+      "kind": "event",
+      "label": "发热",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "患者",
+      "value": null,
+      "unit": null,
+      "site": null,
+      "attributes": {
+        "negation": "否认"
+      },
+      "relations": []
+    }
+  ],
+  "inventory": [
+    {
+      "unit_id": "a1",
+      "kind": "event",
+      "label": "疼痛",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "患者",
+      "value": null,
+      "unit": null,
+      "site": "右膝",
+      "attributes": {
+        "severity": "轻度",
+        "polarity": "positive"
+      },
+      "relations": []
+    },
+    {
+      "unit_id": "a2",
+      "kind": "event",
+      "label": "糖尿病",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "其母",
+      "value": null,
+      "unit": null,
+      "site": null,
+      "attributes": {
+        "polarity": "positive"
+      },
+      "relations": []
+    },
+    {
+      "unit_id": "a3",
+      "kind": "event",
+      "label": "发热",
+      "spans": [
+        {
+          "line_no": 1,
+          "quote": "患者右膝轻度疼痛；其母有糖尿病，患者否认发热。"
+        }
+      ],
+      "subject": "患者",
+      "value": null,
+      "unit": null,
+      "site": null,
+      "attributes": {
+        "polarity": "denied",
+        "denial_source": "患者"
+      },
+      "relations": []
+    }
+  ],
+  "source_notes": [],
+  "inventory_complete": true,
+  "revisions": {
+    "a1": 1,
+    "a2": 1,
+    "a3": 1,
+    "f1": 1,
+    "f2": 1,
+    "f3": 1
+  },
+  "catalog": {
+    "900000001": {
+      "concept_id": 900000001,
+      "concept_name": "Synthetic fixture concept 900000001",
+      "vocabulary_id": "TEST",
+      "concept_code": "TEST-900000001",
+      "concept_class_id": "Synthetic fixture",
+      "domain_id": "Condition",
+      "standard_concept": "S",
+      "valid_start_date": "2003-01-31",
+      "valid_end_date": "2099-12-31",
+      "invalid_reason": null,
+      "vocabulary_version": "fixture-v1",
+      "eligibility": "eligible_standard",
+      "verified_at": "2026-10-25",
+      "meaning_evidence_refs": [
+        "meaning:fixture-900000001-0"
+      ]
+    },
+    "900000002": {
+      "concept_id": 900000002,
+      "concept_name": "Synthetic fixture concept 900000002",
+      "vocabulary_id": "TEST",
+      "concept_code": "TEST-900000002",
+      "concept_class_id": "Synthetic fixture",
+      "domain_id": "Observation",
+      "standard_concept": "S",
+      "valid_start_date": "2002-01-31",
+      "valid_end_date": "2099-12-31",
+      "invalid_reason": null,
+      "vocabulary_version": "fixture-v1",
+      "eligibility": "eligible_standard",
+      "verified_at": "2026-10-25",
+      "meaning_evidence_refs": []
+    },
+    "900000003": {
+      "concept_id": 900000003,
+      "concept_name": "Synthetic fixture concept 900000003",
+      "vocabulary_id": "TEST",
+      "concept_code": "TEST-900000003",
+      "concept_class_id": "Synthetic fixture",
+      "domain_id": "Spec Anatomic Site",
+      "standard_concept": "S",
+      "valid_start_date": "2002-01-31",
+      "valid_end_date": "2099-12-31",
+      "invalid_reason": null,
+      "vocabulary_version": "fixture-v1",
+      "eligibility": "eligible_standard",
+      "verified_at": "2026-10-25",
+      "meaning_evidence_refs": []
+    },
+    "900000004": {
+      "concept_id": 900000004,
+      "concept_name": "Synthetic fixture concept 900000004",
+      "vocabulary_id": "TEST",
+      "concept_code": "TEST-900000004",
+      "concept_class_id": "Synthetic fixture",
+      "domain_id": "Condition",
+      "standard_concept": "S",
+      "valid_start_date": "2002-01-31",
+      "valid_end_date": "2099-12-31",
+      "invalid_reason": null,
+      "vocabulary_version": "fixture-v1",
+      "eligibility": "eligible_standard",
+      "verified_at": "2026-10-25",
+      "meaning_evidence_refs": [
+        "meaning:fixture-900000004-0"
+      ]
+    },
+    "900000005": {
+      "concept_id": 900000005,
+      "concept_name": "Synthetic fixture concept 900000005",
+      "vocabulary_id": "TEST",
+      "concept_code": "TEST-900000005",
+      "concept_class_id": "Synthetic fixture",
+      "domain_id": "Condition",
+      "standard_concept": "S",
+      "valid_start_date": "2002-01-31",
+      "valid_end_date": "2099-12-31",
+      "invalid_reason": null,
+      "vocabulary_version": "fixture-v1",
+      "eligibility": "eligible_standard",
+      "verified_at": "2026-10-25",
+      "meaning_evidence_refs": [
+        "meaning:fixture-900000005-0"
+      ]
+    }
+  },
+  "candidate_refs": {
+    "c1": 900000001,
+    "c18": 900000002,
+    "c19": 900000003,
+    "c5": 900000004,
+    "c6": 900000005
+  },
+  "relationships": {},
+  "tasks": [
+    {
+      "target_ref": "t1",
+      "unit_id": "f1",
+      "field_path": "/label",
+      "revision": 1,
+      "value": "疼痛",
+      "value_sha256": "2f27f5c127b29bd8dbac4a4dc3d1e135dbcfb846c90370c4b8b8d882892eee44",
+      "purpose": "core",
+      "status": "selected",
+      "query_status": "executed_within_declared_plan",
+      "candidate_refs": [
+        "c5"
+      ],
+      "expansion_attempted": false
+    },
+    {
+      "target_ref": "t2",
+      "unit_id": "f1",
+      "field_path": "/site",
+      "revision": 1,
+      "value": "右膝",
+      "value_sha256": "b389cef49181a7e23d9774f2394bfa4ac25d043dc324872319420b85ebc05408",
+      "purpose": "site",
+      "status": "selected",
+      "query_status": "executed_within_declared_plan",
+      "candidate_refs": [
+        "c19"
+      ],
+      "expansion_attempted": true
+    },
+    {
+      "target_ref": "t3",
+      "unit_id": "f1",
+      "field_path": "/attributes/severity",
+      "revision": 1,
+      "value": "轻度",
+      "value_sha256": "bec1f39ce7f7fb6f3f56bd755c0085239b28dc9fc6cb0c9b53411adbfd614782",
+      "purpose": "qualifier",
+      "status": "selected",
+      "query_status": "executed_within_declared_plan",
+      "candidate_refs": [
+        "c18"
+      ],
+      "expansion_attempted": true
+    },
+    {
+      "target_ref": "t4",
+      "unit_id": "f2",
+      "field_path": "/label",
+      "revision": 1,
+      "value": "糖尿病",
+      "value_sha256": "e46910a5bf0867a7672eaafa68e0f7634911f08f85049d71ecfd0ed54e79d79f",
+      "purpose": "core",
+      "status": "selected",
+      "query_status": "executed_within_declared_plan",
+      "candidate_refs": [
+        "c6"
+      ],
+      "expansion_attempted": true
+    },
+    {
+      "target_ref": "t5",
+      "unit_id": "f3",
+      "field_path": "/label",
+      "revision": 1,
+      "value": "发热",
+      "value_sha256": "e917603871252a2d6aa3300581783c71daf544a145684f3ea93e5cbde3580e32",
+      "purpose": "core",
+      "status": "selected",
+      "query_status": "executed_within_declared_plan",
+      "candidate_refs": [
+        "c1"
+      ],
+      "expansion_attempted": false
+    }
+  ],
+  "queries": [],
+  "pending_query": null,
+  "mappings": [
+    {
+      "target_refs": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "bindings": [
+        {
+          "candidate_ref": "c5",
+          "role": "core",
+          "relation": "equivalent",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t1"
+          ],
+          "binding_ref": "m1b1",
+          "revision": 1,
+          "status": "pending_review",
+          "proposed_relation": "equivalent",
+          "accepted_evidence_strength": "not_checked",
+          "semantic_correctness_verified": false,
+          "fingerprint": "2fe67c4a7e0d676678fd3c64a7bad60d83cae0de26a1c0206405da92ec6bc234"
+        },
+        {
+          "candidate_ref": "c19",
+          "role": "site",
+          "relation": "equivalent",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t2"
+          ],
+          "binding_ref": "m1b2",
+          "revision": 1,
+          "status": "pending_review",
+          "proposed_relation": "equivalent",
+          "accepted_evidence_strength": "not_checked",
+          "semantic_correctness_verified": false,
+          "fingerprint": "d4daf63d58798c3e4122e1fe7c9052cb05dfe733b05ff1c49913543f15ce1731"
+        },
+        {
+          "candidate_ref": "c18",
+          "role": "qualifier",
+          "relation": "equivalent",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t3"
+          ],
+          "binding_ref": "m1b3",
+          "revision": 1,
+          "status": "pending_review",
+          "proposed_relation": "equivalent",
+          "accepted_evidence_strength": "not_checked",
+          "semantic_correctness_verified": false,
+          "fingerprint": "ad00cd4757eacc5da7e72856ede37cc2ba23fee51c5903a97170c3f743cbc046"
+        }
+      ],
+      "dependencies": [
+        {
+          "target_ref": "f1",
+          "revision": 1
+        }
+      ],
+      "replaces": [],
+      "residuals": [],
+      "reason": "Synthetic fixture only.",
+      "proposed_reason": "Synthetic fixture only.",
+      "proposed_reason_status": "not_independently_reviewed_not_published",
+      "mapping_ref": "m1",
+      "revision": 1,
+      "status": "pending_review",
+      "fingerprint": "ba6794536186d5dc6a83b09166d8633b9de30c94a4866aa7dfca187a8a1edb52",
+      "semantic_correctness_verified": false
+    },
+    {
+      "target_refs": [
+        "t4"
+      ],
+      "bindings": [
+        {
+          "candidate_ref": "c6",
+          "role": "core",
+          "relation": "equivalent",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t4"
+          ],
+          "binding_ref": "m2b1",
+          "revision": 1,
+          "status": "pending_review",
+          "proposed_relation": "equivalent",
+          "accepted_evidence_strength": "not_checked",
+          "semantic_correctness_verified": false,
+          "fingerprint": "9f30a102f94ba6c6eaaa82bc47b857987c4ee62422ae886abfb2c5c8b8c1f13d"
+        }
+      ],
+      "dependencies": [
+        {
+          "target_ref": "f2",
+          "revision": 1
+        }
+      ],
+      "replaces": [],
+      "residuals": [],
+      "reason": "Synthetic fixture only.",
+      "proposed_reason": "Synthetic fixture only.",
+      "proposed_reason_status": "not_independently_reviewed_not_published",
+      "mapping_ref": "m2",
+      "revision": 1,
+      "status": "pending_review",
+      "fingerprint": "ca48acbb6d43a3b8f60757f01b2acf54fbe3a129c6f2ddb8b2f7bc692c3bc392",
+      "semantic_correctness_verified": false
+    },
+    {
+      "target_refs": [
+        "t5"
+      ],
+      "bindings": [
+        {
+          "candidate_ref": "c1",
+          "role": "core",
+          "relation": "equivalent",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t5"
+          ],
+          "binding_ref": "m3b1",
+          "revision": 1,
+          "status": "pending_review",
+          "proposed_relation": "equivalent",
+          "accepted_evidence_strength": "not_checked",
+          "semantic_correctness_verified": false,
+          "fingerprint": "62ac1758653a365669ec4b7665d8f381b359b5f1f06a974cb13621896d3224ba"
+        }
+      ],
+      "dependencies": [
+        {
+          "target_ref": "f3",
+          "revision": 1
+        }
+      ],
+      "replaces": [],
+      "residuals": [],
+      "reason": "Synthetic fixture only.",
+      "proposed_reason": "Synthetic fixture only.",
+      "proposed_reason_status": "not_independently_reviewed_not_published",
+      "mapping_ref": "m3",
+      "revision": 1,
+      "status": "pending_review",
+      "fingerprint": "cc0d545b878d652f532a3a5d7827460bd0857cd8cc8633813efa4f9188f39cb1",
+      "semantic_correctness_verified": false
+    }
+  ],
+  "issues": [],
+  "source_checks": {
+    "a1": {
+      "target_ref": "a1",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f1"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    },
+    "a2": {
+      "target_ref": "a2",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f2"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    },
+    "a3": {
+      "target_ref": "a3",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f3"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    },
+    "f1": {
+      "target_ref": "f1",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f1"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    },
+    "f2": {
+      "target_ref": "f2",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f2"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    },
+    "f3": {
+      "target_ref": "f3",
+      "revision": 1,
+      "status": "represented",
+      "fact_refs": [
+        "f3"
+      ],
+      "detail": "Synthetic fixture only.",
+      "mode": "source_compare",
+      "model_checked_current_revision": true,
+      "semantic_correctness_verified": false
+    }
+  },
+  "mapping_checks": {},
+  "call": {
+    "mode": "mapping_verify",
+    "targets": [
+      {
+        "target_ref": "m1b1",
+        "revision": 1
+      },
+      {
+        "target_ref": "m1b2",
+        "revision": 1
+      },
+      {
+        "target_ref": "m1b3",
+        "revision": 1
+      },
+      {
+        "target_ref": "m2b1",
+        "revision": 1
+      },
+      {
+        "target_ref": "m3b1",
+        "revision": 1
+      }
+    ],
+    "fingerprint": "29b41d4a19208dc2d6a28911ee0f42b575f1d7e53647e357212cd1a1cb355ad9"
+  },
+  "delta_refs": [],
+  "rejected_fingerprints": {},
+  "review_attempts": [],
+  "budget": {
+    "max_loop_waves": 6,
+    "max_query_batches": 3,
+    "max_terms_per_batch": 6,
+    "max_repair_waves": 2
+  },
+  "usage": {
+    "loop_waves": 4,
+    "query_batches_reserved": 2,
+    "repair_waves": 0
+  },
+  "stop": false,
+  "stop_reason": null,
+  "trace": [],
+  "last_feedback": null,
+  "format_audit": [],
+  "changes": [],
+  "warning": null,
+  "extraction_done": true,
+  "unmodeled": [],
+  "model_inventory_complete": true,
+  "extraction_notes": [],
+  "source_facets": [
+    {
+      "facet_ref": "f1:/label",
+      "unit_id": "f1",
+      "revision": 1,
+      "field_path": "/label",
+      "value": "疼痛",
+      "value_sha256": "2f27f5c127b29bd8dbac4a4dc3d1e135dbcfb846c90370c4b8b8d882892eee44",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "coding_required",
+      "purpose": "core"
+    },
+    {
+      "facet_ref": "f1:/subject",
+      "unit_id": "f1",
+      "revision": 1,
+      "field_path": "/subject",
+      "value": "患者",
+      "value_sha256": "cb3a70460f3b542dcf232772d8c97b8dabaa7bf66b7f5a82a5a124dcefd6c315",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "context_only",
+      "purpose": "subject"
+    },
+    {
+      "facet_ref": "f1:/site",
+      "unit_id": "f1",
+      "revision": 1,
+      "field_path": "/site",
+      "value": "右膝",
+      "value_sha256": "b389cef49181a7e23d9774f2394bfa4ac25d043dc324872319420b85ebc05408",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "coding_required",
+      "purpose": "site"
+    },
+    {
+      "facet_ref": "f1:/attributes/severity",
+      "unit_id": "f1",
+      "revision": 1,
+      "field_path": "/attributes/severity",
+      "value": "轻度",
+      "value_sha256": "bec1f39ce7f7fb6f3f56bd755c0085239b28dc9fc6cb0c9b53411adbfd614782",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "coding_required",
+      "purpose": "qualifier"
+    },
+    {
+      "facet_ref": "f2:/label",
+      "unit_id": "f2",
+      "revision": 1,
+      "field_path": "/label",
+      "value": "糖尿病",
+      "value_sha256": "e46910a5bf0867a7672eaafa68e0f7634911f08f85049d71ecfd0ed54e79d79f",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "coding_required",
+      "purpose": "core"
+    },
+    {
+      "facet_ref": "f2:/subject",
+      "unit_id": "f2",
+      "revision": 1,
+      "field_path": "/subject",
+      "value": "其母",
+      "value_sha256": "929f2c4f66431e770ba5ce562c4361056481574716ce40eca72f70bac0e9da13",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "context_only",
+      "purpose": "subject"
+    },
+    {
+      "facet_ref": "f2:/attributes",
+      "unit_id": "f2",
+      "revision": 1,
+      "field_path": "/attributes",
+      "value": {},
+      "value_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "context_only",
+      "purpose": "qualifier"
+    },
+    {
+      "facet_ref": "f3:/label",
+      "unit_id": "f3",
+      "revision": 1,
+      "field_path": "/label",
+      "value": "发热",
+      "value_sha256": "e917603871252a2d6aa3300581783c71daf544a145684f3ea93e5cbde3580e32",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "coding_required",
+      "purpose": "core"
+    },
+    {
+      "facet_ref": "f3:/subject",
+      "unit_id": "f3",
+      "revision": 1,
+      "field_path": "/subject",
+      "value": "患者",
+      "value_sha256": "cb3a70460f3b542dcf232772d8c97b8dabaa7bf66b7f5a82a5a124dcefd6c315",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "context_only",
+      "purpose": "subject"
+    },
+    {
+      "facet_ref": "f3:/attributes/negation",
+      "unit_id": "f3",
+      "revision": 1,
+      "field_path": "/attributes/negation",
+      "value": "否认",
+      "value_sha256": "066e261c4fb44aa38b33ee5a70aaeb7f219ebf13e7407f064c99a7fdc63ed49f",
+      "source_preserved": true,
+      "source_lines": [
+        1
+      ],
+      "intent": "context_only",
+      "purpose": "qualifier"
+    }
+  ],
+  "explanation_contract": "typed_assertions_e8",
+  "source_gate": {
+    "status": "checks_current",
+    "blockers": [],
+    "semantic_repair_claimed": false
+  },
+  "meaning_evidence": {
+    "meaning:fixture-900000001-0": {
+      "availability": {
+        "concept_identity": "available",
+        "description_type": "not_stored_in_source_schema",
+        "direct_relations": "available",
+        "formal_text_definition": "not_stored_in_source_schema",
+        "relationship_group": "not_stored_in_source_schema",
+        "synonyms": "available",
+        "vocabulary_metadata": "available"
+      },
+      "caps": {
+        "direct_relations": 10,
+        "synonyms": 12
+      },
+      "concept_id": 900000001,
+      "counts": {
+        "synonyms": 1,
+        "relations": 0
+      },
+      "relations": [],
+      "schema_version": "ohdsi_meaning_e4_v1",
+      "source": {
+        "concept_id": 900000001,
+        "concept_name": "Synthetic fixture concept 900000001",
+        "vocabulary_id": "TEST",
+        "concept_code": "TEST-900000001",
+        "concept_class_id": "Synthetic fixture",
+        "domain_id": "Condition",
+        "standard_concept": "S",
+        "valid_start_date": "2003-01-31",
+        "valid_end_date": "2099-12-31",
+        "invalid_reason": null,
+        "vocabulary_version": "fixture-v1"
+      },
+      "synonyms": [
+        {
+          "term": "Synthetic fixture synonym 900000001",
+          "language_concept_id": 900999999,
+          "description_type": "fixture_synonym"
+        }
+      ],
+      "truncated": {
+        "synonyms": false,
+        "relations": false
+      },
+      "verification_date": "2026-10-25",
+      "meaning_ref": "meaning:fixture-900000001-0"
+    },
+    "meaning:fixture-900000004-0": {
+      "availability": {
+        "concept_identity": "available",
+        "description_type": "not_stored_in_source_schema",
+        "direct_relations": "available",
+        "formal_text_definition": "not_stored_in_source_schema",
+        "relationship_group": "not_stored_in_source_schema",
+        "synonyms": "available",
+        "vocabulary_metadata": "available"
+      },
+      "caps": {
+        "direct_relations": 10,
+        "synonyms": 12
+      },
+      "concept_id": 900000004,
+      "counts": {
+        "synonyms": 1,
+        "relations": 0
+      },
+      "relations": [],
+      "schema_version": "ohdsi_meaning_e4_v1",
+      "source": {
+        "concept_id": 900000004,
+        "concept_name": "Synthetic fixture concept 900000004",
+        "vocabulary_id": "TEST",
+        "concept_code": "TEST-900000004",
+        "concept_class_id": "Synthetic fixture",
+        "domain_id": "Condition",
+        "standard_concept": "S",
+        "valid_start_date": "2002-01-31",
+        "valid_end_date": "2099-12-31",
+        "invalid_reason": null,
+        "vocabulary_version": "fixture-v1"
+      },
+      "synonyms": [
+        {
+          "term": "Synthetic fixture synonym 900000004",
+          "language_concept_id": 900999999,
+          "description_type": "fixture_synonym"
+        }
+      ],
+      "truncated": {
+        "synonyms": false,
+        "relations": false
+      },
+      "verification_date": "2026-10-25",
+      "meaning_ref": "meaning:fixture-900000004-0"
+    },
+    "meaning:fixture-900000005-0": {
+      "availability": {
+        "concept_identity": "available",
+        "description_type": "not_stored_in_source_schema",
+        "direct_relations": "available",
+        "formal_text_definition": "not_stored_in_source_schema",
+        "relationship_group": "not_stored_in_source_schema",
+        "synonyms": "available",
+        "vocabulary_metadata": "available"
+      },
+      "caps": {
+        "direct_relations": 10,
+        "synonyms": 12
+      },
+      "concept_id": 900000005,
+      "counts": {
+        "synonyms": 1,
+        "relations": 0
+      },
+      "relations": [],
+      "schema_version": "ohdsi_meaning_e4_v1",
+      "source": {
+        "concept_id": 900000005,
+        "concept_name": "Synthetic fixture concept 900000005",
+        "vocabulary_id": "TEST",
+        "concept_code": "TEST-900000005",
+        "concept_class_id": "Synthetic fixture",
+        "domain_id": "Condition",
+        "standard_concept": "S",
+        "valid_start_date": "2002-01-31",
+        "valid_end_date": "2099-12-31",
+        "invalid_reason": null,
+        "vocabulary_version": "fixture-v1"
+      },
+      "synonyms": [
+        {
+          "term": "Synthetic fixture synonym 900000005",
+          "language_concept_id": 900999999,
+          "description_type": "fixture_synonym"
+        }
+      ],
+      "truncated": {
+        "synonyms": false,
+        "relations": false
+      },
+      "verification_date": "2026-10-25",
+      "meaning_ref": "meaning:fixture-900000005-0"
+    }
+  },
+  "meaning_provenance": {
+    "meaning:fixture-900000001-0": [
+      {
+        "receipt_ref": "synthetic-fixture-receipt",
+        "verification_date": "2026-10-25",
+        "vocabulary_versions": {
+          "TEST": "fixture-v1"
+        }
+      }
+    ],
+    "meaning:fixture-900000004-0": [
+      {
+        "receipt_ref": "synthetic-fixture-receipt",
+        "verification_date": "2026-10-25",
+        "vocabulary_versions": {
+          "TEST": "fixture-v1"
+        }
+      }
+    ],
+    "meaning:fixture-900000005-0": [
+      {
+        "receipt_ref": "synthetic-fixture-receipt",
+        "verification_date": "2026-10-25",
+        "vocabulary_versions": {
+          "TEST": "fixture-v1"
+        }
+      }
+    ]
+  },
+  "decision_queue": {}
+}

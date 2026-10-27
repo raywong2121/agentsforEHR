@@ -1,0 +1,52 @@
+{
+  "selections": [
+    {
+      "target_refs": [
+        "t2"
+      ],
+      "bindings": [
+        {
+          "candidate_ref": "c19",
+          "role": "site",
+          "relation": "label_association",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t2"
+          ]
+        }
+      ],
+      "dependencies": [],
+      "replaces": [
+        "m1b2"
+      ],
+      "residuals": [],
+      "reason": "Synthetic fixture only."
+    },
+    {
+      "target_refs": [
+        "t3"
+      ],
+      "bindings": [
+        {
+          "candidate_ref": "c18",
+          "role": "qualifier",
+          "relation": "label_association",
+          "relation_origin": "model_semantic_judgment",
+          "relationship_ref": null,
+          "covers": [
+            "t3"
+          ]
+        }
+      ],
+      "dependencies": [],
+      "replaces": [
+        "m1b3"
+      ],
+      "residuals": [],
+      "reason": "Synthetic fixture only."
+    }
+  ],
+  "unresolved": [],
+  "meaning_requests": []
+}

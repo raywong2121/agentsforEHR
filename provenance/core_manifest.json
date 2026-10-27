@@ -1,0 +1,110 @@
+{
+  "release_scope": "Public source derivative, not a new live Dify import, model run or clinical validation.",
+  "source_cutoff_date": "2026-10-25",
+  "prepared_date": "2026-10-27",
+  "files": [
+    {
+      "source_artifact": "source/term_runtime.py",
+      "source_sha256": "5cb50e08114fabdaadfb623c2e916e1f1bd077ace4a14ec6392d6cd24a0fdfd7",
+      "public_path": "src/term_runtime.py",
+      "public_sha256": "5cb50e08114fabdaadfb623c2e916e1f1bd077ace4a14ec6392d6cd24a0fdfd7",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source_artifact": "source/rule_json.py",
+      "source_sha256": "59220f7d4ac10eaaa2bbc93dfdc5fef68373f762be7dece35485aaac065253f1",
+      "public_path": "src/rule_json.py",
+      "public_sha256": "59220f7d4ac10eaaa2bbc93dfdc5fef68373f762be7dece35485aaac065253f1",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source_artifact": "source/normalize.e4.py",
+      "source_sha256": "608dd23ad5d8c2a7ff59f7ab908df2b740b7f0bb371c2024cf6871a65f40f991",
+      "public_path": "src/receipt_normalizer.py",
+      "public_sha256": "608dd23ad5d8c2a7ff59f7ab908df2b740b7f0bb371c2024cf6871a65f40f991",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source_artifact": "source/vocabulary_search.e4.sql",
+      "source_sha256": "1cbac6eecf98104a624ee129649e2486390b471887292c3bf1bfa0fca88dbbe0",
+      "public_path": "sql/vocabulary_search.sql",
+      "public_sha256": "1cbac6eecf98104a624ee129649e2486390b471887292c3bf1bfa0fca88dbbe0",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source_artifact": "source/PROMPTS.md",
+      "source_sha256": "b47461114af594e9eae806b325cbffaaad220654f326d9975ee7e412db95c537",
+      "public_path": "prompts/PROMPTS.md",
+      "public_sha256": "b47461114af594e9eae806b325cbffaaad220654f326d9975ee7e412db95c537",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source_artifact": "dify/E91.final.actual-export.yml",
+      "source_sha256": "26f373d6ce1ff8772950a77ca89cdaf8fb21ac9b61584402b916e3becc7d9164",
+      "public_path": "dify/e91.public.yml",
+      "public_sha256": "5e100fa704464fb6d82a9eef55d01cac4510bbf5129800cf775c2ec2d581acc0",
+      "byte_identical": false,
+      "changes": [
+        {
+          "path": "/app/name",
+          "kind": "neutral public app label"
+        },
+        {
+          "path": "/app/description",
+          "kind": "accurate public derivative description"
+        },
+        {
+          "path": "/workflow/graph/nodes[id=cs_pg]/data/provider_icon",
+          "kind": "remove workspace tenant identifier from cosmetic icon URL; empty string"
+        }
+      ]
+    },
+    {
+      "public_path": "examples/synthetic_cases.json",
+      "public_sha256": "1ddd39089d72fec487973b358b53ad2ba14c2d2b404dd5e9eda3fada3aa9e2e7",
+      "derived": true,
+      "origin": "Two synthetic texts extracted from archived current_bindings.csv; other wording is a public configuration example, not historical output."
+    },
+    {
+      "public_path": "dify/node_entrypoints.json",
+      "public_sha256": "ff5758b2e77c0e09499021980603ea380935376d794fe1a0b0a0ba1fdfe930ca",
+      "derived": true,
+      "origin": "Code-node wrapper AST, variables and outputs extracted from archived actual export."
+    },
+    {
+      "public_path": "dify/configuration_summary.json",
+      "public_sha256": "5ea251bc0e0598728196fa00706197771d504cff9478b59e06005bd5536fefc4",
+      "derived": true,
+      "origin": "Allowlisted structural/configuration metadata extracted from archived actual export; known risks read from exact core sources."
+    },
+    {
+      "public_path": "src/__init__.py",
+      "public_sha256": "777004e8153ec6364616b73ee88c9817e48f6e2a39dd499ae38f27f5a56bc6fd",
+      "derived": true,
+      "origin": "New public package docstring; no archived implementation logic."
+    },
+    {
+      "public_path": "prompts/actual_node_prompts.json",
+      "public_sha256": "9f9a03ef9092d41a400cb30d54bfbe35da7798edd783935df9fdd89a54ff0fce",
+      "derived": true,
+      "origin": "Exact final actual-export LLM prompt text and prompt IDs; no run outputs or reasoning content."
+    },
+    {
+      "public_path": "provenance/core_notes.md",
+      "public_sha256": "aff207d5402ef6276dd700f226b672795181715e82ba9fd74bd4f8574a1c15ce",
+      "derived": true,
+      "origin": "Public preparation explanation and deployment limitations; new documentation, no new experimental results."
+    },
+    {
+      "public_path": "provenance/core_preparation_checks.json",
+      "public_sha256": "4210f443203eeeef20ed57b9b50d3622e1ee9a87a50f18b3cf273aef679bceeb",
+      "derived": true,
+      "origin": "Local source/delta/parser verification record; not a live Dify or model test."
+    }
+  ]
+}
