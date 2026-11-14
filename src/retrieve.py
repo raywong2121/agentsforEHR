@@ -21,12 +21,13 @@ CLINICAL_IN = ("('Condition','Drug','Measurement','Observation','Procedure','Spe
 
 def _q(sql: str) -> str:
     env = dict(os.environ, PGPASSWORD=os.environ.get("OHDSI_PASSWORD", ""),
-               PGCLIENTENCODING="UTF8")
+               PGCLIENTENCODING="UTF8", PGCONNECT_TIMEOUT="10")
     if not env["PGPASSWORD"]:
         raise RuntimeError("missing OHDSI_PASSWORD environment variable (read-only vocabulary password)")
     r = subprocess.run(
         ["psql", "-h", DB["host"], "-p", str(DB["port"]), "-U", DB["user"],
-         "-d", DB["db"], "-tA", "-F", "\t", "-c", sql],
+         "-d", DB["db"], "-tA", "-F", "\t", "-c", sql,
+         "-v", "ON_ERROR_STOP=1"],
         env=env, capture_output=True, text=True, timeout=60)
     if r.returncode != 0:
         raise RuntimeError(r.stderr[:800])
