@@ -1,6 +1,7 @@
-"""策略级记忆：存"可迁移的编码策略"，不存单条术语映射。
+"""Strategy-level memory: store transferable coding strategies, not term mappings.
 
-每条策略 = 触发条件 + 动作 + 示例。检索时按当前片段判断哪几条策略适用。
+Each strategy = trigger + action + example. At inference time the model decides
+which strategies apply to the current span.
 """
 import json
 import os
@@ -58,8 +59,9 @@ def as_prompt_block(strs: list[dict]) -> str:
 
 
 def targets(span: str, zh: str, domain: str | None = None) -> list[str]:
-    """策略里若点名了具体目标术语，提取出来用于反推检索。
-    先做确定性匹配（span/zh 出现在策略名或示例里），再用模型相关性做补充。"""
+    """Return target search terms named by strategies for reverse retrieval.
+    Deterministic matching first (span/zh appears in a strategy name or
+    example), then model-based relevance as a supplement."""
     out = []
     hay = (span or "") + "|" + (zh or "")
     for s in load():

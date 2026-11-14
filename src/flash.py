@@ -1,6 +1,6 @@
-"""经 Dify 控制台调用 deepseek-v4-flash（用登录态 + model_config 覆盖，不需要裸 API key）。
+"""Call the model through the Dify console (login session + model_config
+override; no bare API key needed).
 
-复用 CODEX 在 11-05 已验证的路径：
   POST /console/api/apps/{app_id}/chat-messages
   body.model_config.model = {provider: langgenius/deepseek/deepseek, name: deepseek-v4-flash, ...}
 """
@@ -19,14 +19,14 @@ def _login():
     mgmt = os.environ.get("DIFY_MANAGEMENT_MODULE")
     if not mgmt:
         raise RuntimeError(
-            "设置 DIFY_MANAGEMENT_MODULE 为本地 Dify 控制台源码包路径"
-            "（其中包含 management.Api 登录实现，本仓库不含该模块）")
+            "set DIFY_MANAGEMENT_MODULE to the path of the local Dify console "
+            "source package (it provides the management.Api login; not included here)")
     sys.path.insert(0, mgmt)
     from management import Api
     email = os.environ.get("DIFY_EMAIL", "")
     password = os.environ.get("DIFY_PASSWORD", "")
     if not password:
-        raise RuntimeError("缺少 DIFY_PASSWORD 环境变量（Dify 控制台密码，不落盘）")
+        raise RuntimeError("missing DIFY_PASSWORD environment variable (Dify console password, never stored)")
     return Api(email, password)
 
 
@@ -63,7 +63,7 @@ def chat(system: str, user: str, max_tokens: int = 512, json_mode: bool = False)
     with api.opener.open(req, timeout=130) as resp:
         raw = resp.read()
 
-    # 解析 SSE
+    # parse SSE
     text = ""
     usage = {}
     message_id = None
@@ -91,6 +91,6 @@ def chat(system: str, user: str, max_tokens: int = 512, json_mode: bool = False)
 
 
 if __name__ == "__main__":
-    r = chat("你是助手。", "只回复四个字：调用成功", max_tokens=32)
+    r = chat("You are an assistant.", "Reply with the single word: ok", max_tokens=32)
     print("text:", r["text"].strip())
     print("usage:", r["usage"])

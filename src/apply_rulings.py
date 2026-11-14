@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""把最终裁定落进新金标准（覆盖生成器自动检索仍会引入的偏差）。"""
+"""Apply the final adjudication rulings to the gold (overriding biases the generator retrieval would reintroduce)."""
 import json
 
 FIX = {

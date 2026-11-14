@@ -1,6 +1,7 @@
-"""自学习-人工门禁：审核经验草案，批准后才写入 experience.jsonl。
+"""Self-learning human gate: review strategy drafts; only approved drafts are
+written to experience.jsonl.
 
-用法：
+Usage:
   python3 approve.py list             # 查看待审草案
   python3 approve.py approve 0 [1 2]  # 批准指定序号（写入经验库）
   python3 approve.py reject 0         # 驳回
@@ -43,7 +44,7 @@ def main():
     if cmd == "list":
         pending = [(i, d) for i, d in enumerate(drafts) if d.get("status") == "pending"]
         if not pending:
-            print("没有待审草案")
+            print("no pending drafts")
         for i, d in pending:
             print(f"[{i}] ({d.get('count', 1)}x) {d['concept']}: {d['error']} -> {d['fix']}")
         return
@@ -54,10 +55,10 @@ def main():
             if cmd == "approve":
                 append_experience(d)
                 d["status"] = "approved"
-                print(f"已批准并写入经验库: {d['concept']}")
+                print(f"approved and written to the library: {d['concept']}")
             else:
                 d["status"] = "rejected"
-                print(f"已驳回: {d['concept']}")
+                print(f"rejected: {d['concept']}")
     save_drafts(drafts)
 
 

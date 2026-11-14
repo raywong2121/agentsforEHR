@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""双臂对照实验：同一批病例，冻结策略 vs 在线更新策略。
+"""Two-arm comparison: same batch of cases, frozen strategies vs online-updated strategies.
 
 设计要点：
 1. 两臂共享同一份抽取结果（CACHE_EXTRACT=1），只让策略库不同，压住运行间波动；
@@ -72,7 +72,7 @@ def main():
         shutil.copy(STRAT, FROZEN)
     frozen = [json.loads(l) for l in open(FROZEN, encoding="utf-8") if l.strip()]
     seeds = [json.loads(l) for l in open(STRAT, encoding="utf-8") if l.strip()]
-    grown = list(seeds)          # 在线臂的策略库（独立维护，不被冻结臂重写覆盖）
+    grown = list(seeds)          # online arm's library (maintained separately; never overwritten by the frozen arm)
     open(STRAT, "w", encoding="utf-8").write("".join(json.dumps(s, ensure_ascii=False) + "\n" for s in seeds))
 
     cases = json.load(open(os.path.join(HERE, "cases_real100.json"), encoding="utf-8"))["cases"]
@@ -87,22 +87,22 @@ def main():
 
     out = []
     for k, fold in enumerate(folds, 1):
-        print(f"\n=== 第 {k} 折（{len(fold)} 例）===", flush=True)
+        print(f"\n=== fold {k} ({len(fold)} cases) ===", flush=True)
 
-        # 冻结臂
+        # frozen arm
         open(STRAT, "w", encoding="utf-8").write(
             "".join(json.dumps(s, ensure_ascii=False) + "\n" for s in frozen))
-        print("  冻结臂...", flush=True)
+        print("  frozen arm...", flush=True)
         predsF = run_fold(fold)
         tF, cF = score(predsF, gold_map)
         json.dump({"preds": predsF}, open(os.path.join(HERE, f"arm_frozen_fold{k}.json"), "w",
                                           encoding="utf-8"), ensure_ascii=False, indent=1)
 
-        # 在线臂（当前增长库）
+        # online arm (current grown library)
         open(STRAT, "w", encoding="utf-8").write(
             "".join(json.dumps(s, ensure_ascii=False) + "\n" for s in grown))
         cur = list(grown)
-        print(f"  在线臂（库 {len(cur)} 条）...", flush=True)
+        print(f"  online arm (library of {len(cur)})...", flush=True)
         predsO = run_fold(fold)
         tO, cO = score(predsO, gold_map)
         json.dump({"preds": predsO}, open(os.path.join(HERE, f"arm_online_fold{k}.json"), "w",
@@ -114,9 +114,9 @@ def main():
                "diff": round((cO / tO - cF / tF) * 100, 1) if tF and tO else 0,
                "lib_before": len(cur), "lib_after": len(cur)}
         out.append(row)
-        print(f"  >>> 冻结 {row['frozen']}% | 在线 {row['online']}% | 差 {row['diff']:+} pt", flush=True)
+        print(f"  >>> frozen {row['frozen']}% | online {row['online']}% | diff {row['diff']:+} pt", flush=True)
 
-        # 在线臂失败 → 挖矿 → 批准
+        # online arm failures -> mine -> approve
         try:
             pred_path = os.path.join(HERE, f"arm_online_fold{k}.json")
             mine.main(pred_path, os.path.join(HERE, "gold_real100.json"), os.path.join(HERE, "experience_drafts.jsonl"))
@@ -130,18 +130,18 @@ def main():
             approve.save_drafts(drafts)
             grown = [json.loads(l) for l in open(STRAT, encoding="utf-8") if l.strip()]
             row["lib_after"] = len(grown)
-            print(f"  新增策略 {n} 条 → 库 {row['lib_after']} 条", flush=True)
+            print(f"  {n} new strategies -> library of {row['lib_after']}", flush=True)
         except Exception as e:
-            print("  挖矿/批准失败:", str(e)[:150], flush=True)
+            print("  mining/approval failed:", str(e)[:150], flush=True)
 
         json.dump(out, open(RESULT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
-    print("\n=== 双臂对照结果 ===", flush=True)
+    print("\n=== two-arm results ===", flush=True)
     for r in out:
-        print(f"  第{r['fold']}折 | 冻结 {r['frozen']}% | 在线 {r['online']}% | 差 {r['diff']:+} pt "
-              f"| 库 {r['lib_before']}→{r['lib_after']}", flush=True)
+        print(f"  fold {r['fold']} | frozen {r['frozen']}% | online {r['online']}% | diff {r['diff']:+} pt "
+              f"| library {r['lib_before']}->{r['lib_after']}", flush=True)
     tf = sum(r["n"] for r in out) or 1
-    print(f"  汇总平均差：{sum(r['diff'] * r['n'] for r in out) / tf:+.1f} pt", flush=True)
+    print(f"  weighted mean diff: {sum(r['diff'] * r['n'] for r in out) / tf:+.1f} pt", flush=True)
     json.dump(out, open(RESULT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 

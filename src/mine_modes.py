@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""失败模式挖矿（v2）：从"错误发生在哪条推理路径"中提炼策略，而非从"错误→正确答案"中提炼知识。
+"""Failure-mode mining (v2): distill strategies from *which reasoning path the
+error occurred on*, not from "error -> correct answer" knowledge.
 
 流程：
   1. 用候选集判定失败模式（候选缺失 / 子串陷阱 / 层级混淆 / 弃权 / 漏抽）
@@ -117,14 +118,14 @@ def make_strategy(mode, items):
         d["status"] = "pending"
         return d
     except Exception as e:
-        return {"name": mode, "trigger": MODE_DESC[mode], "action": f"（生成失败：{str(e)[:50]}）",
+        return {"name": mode, "trigger": MODE_DESC[mode], "action": f"(generation failed: {str(e)[:50]})",
                 "examples": [], "mode": mode, "count": len(items), "status": "pending"}
 
 
 def main(pred_path, gold_path, out_path="experience_drafts.jsonl"):
     modes = collect(pred_path, gold_path)
     total = sum(len(v) for v in modes.values())
-    print(f"错误 {total} 个，失败模式 {len(modes)} 类")
+    print(f"{total} errors, {len(modes)} failure modes")
     with open(out_path, "w", encoding="utf-8") as f:
         for mode, items in sorted(modes.items(), key=lambda kv: -len(kv[1])):
             print(f"  [{len(items)}x] {mode}: {MODE_DESC[mode]}")

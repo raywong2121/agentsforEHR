@@ -1,4 +1,4 @@
-"""跑管线的通用入口：python3 run_cases.py cases.json predictions.json"""
+"""Generic pipeline entry point: python3 run_cases.py cases.json predictions.json"""
 import json
 import sys
 import threading
@@ -8,7 +8,7 @@ import pipeline
 
 
 def run_with_timeout(fn, args, seconds=300):
-    """在独立线程里跑，超时即放弃该用例。"""
+    """Run in a worker thread; abandon the case on timeout."""
     box = {"res": None, "err": None}
 
     def target():

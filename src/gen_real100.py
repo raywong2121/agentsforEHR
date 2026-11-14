@@ -1,4 +1,4 @@
-"""生成 100 条真实结构的临床病历（供医生标注金标准）。
+"""Generate 100 realistically structured clinical notes (for gold annotation).
 
 结构：主诉 + 现病史 + 既往史/用药 + 查体 + 辅助检查 + 诊断 + 治疗。
 保证临床合理性（产科只给孕妇、男性不给妇科、儿科用"患儿"）。
@@ -64,21 +64,21 @@ def pick(pool, n=1):
 
 
 def gen_note(i):
-    """返回 (文本, 事实列表[dict])"""
+    """Return (text, list of fact dicts)."""
     sex = "男" if i % 2 == 0 else "女"
     age = random.choice([25, 30, 34, 45, 52, 58, 65, 70, 78])
     is_preg = (sex == "女" and 20 <= age <= 40 and i % 7 == 0)
     is_ped = age <= 14
     subj = "患儿" if is_ped else "患者"
 
-    obs = []  # 事实
+    obs = []  # facts
 
-    # 主诉
+    # chief complaint
     s1 = random.choice(SYMPTOMS)
     dur = random.choice(DURS)
     obs.append({"span": s1[0], "en": s1[1], "domain": "Condition", "assertion": "肯定", "subject": subj})
 
-    # 现病史：伴第二个症状 + 可否定第三个
+    # history of present illness: second symptom + optionally negated third
     s2 = random.choice([s for s in SYMPTOMS if s[0] != s1[0]])
     obs.append({"span": s2[0], "en": s2[1], "domain": "Condition", "assertion": "肯定", "subject": subj})
     s3 = random.choice([s for s in SYMPTOMS if s[0] not in (s1[0], s2[0])])
@@ -86,7 +86,7 @@ def gen_note(i):
     obs.append({"span": s3[0], "en": s3[1], "domain": "Condition",
                 "assertion": "否定" if neg else "肯定", "subject": subj})
 
-    # 既往史 + 用药
+    # past history + medication
     if is_preg:
         d = random.choice(DISEASES_OB)
     elif is_ped:
@@ -97,7 +97,7 @@ def gen_note(i):
     dr = random.choice(DRUGS)
     obs.append({"span": dr[0], "en": dr[1], "domain": "Drug", "assertion": "服用中", "subject": subj})
 
-    # 查体：生命体征 + 一个体征
+    # physical exam: one vital sign + one finding
     v = random.choice(VITALS)
     val = random.choice(v[2])
     if v[0] == "血压" and "/" in val:
@@ -120,7 +120,7 @@ def gen_note(i):
         obs.append({"span": span, "en": ex[1], "domain": "Condition", "assertion": "肯定",
                     "subject": subj, "site": site, "site_en": site_en})
 
-    # 辅助检查（部位从 span 拆出）
+    # auxiliary exams (site split out of the span)
     p = random.choice(PROCS)
     span, site, site_en, en = {
         "心电图": ("心电图", None, None, "electrocardiographic procedure"),
@@ -137,7 +137,7 @@ def gen_note(i):
                 "value": t[2], "specimen": t[3], "subject": subj,
                 "concept_id": int(gold_cid) if gold_cid.isdigit() else None})
 
-    # 诊断（复用既往病或新病）
+    # diagnosis (reuse the past disease or a new one)
     dx = d if random.random() < 0.5 else random.choice(DISEASES_PED if is_ped else DISEASES_COMMON)
     obs.append({"span": dx[0], "en": dx[1], "domain": "Condition", "assertion": "肯定", "subject": subj})
 

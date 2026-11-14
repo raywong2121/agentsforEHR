@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""六维评测：概念 / 断言 / 数值 / 标本 / 主体 / 部位，另报全对率。"""
+"""Six-dimension evaluation: concept / assertion / value / specimen / subject / site, plus the all-correct rate."""
 import json
 import re
 import sys
@@ -83,13 +83,13 @@ def main(pred_path, gold_path):
             else:
                 detail.append((g["id"], m["span"], {k: v for k, v in checks.items() if not v}))
 
-    print(f"金标准 mention {n_gold_mentions} | 匹配到行 {dims['concept'][1]}")
+    print(f"gold mentions {n_gold_mentions} | matched rows {dims['concept'][1]}")
     for k in ("concept", "assertion", "value", "specimen", "subject", "site", "all"):
         c, n = dims[k]
         print(f"  {k:<9} {c}/{n} = {c/n*100:.1f}%" if n else f"  {k}: n/a")
-    print("\n未全对的维度明细（前 20）：")
+    print("\nfacts failing any dimension (first 20):")
     for cid, span, fails in detail[:20]:
-        print(f"  [{cid}] {span}: 未过维度 {list(fails)}")
+        print(f"  [{cid}] {span}: failing dims {list(fails)}")
 
 
 if __name__ == "__main__":

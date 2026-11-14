@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""全量六维评测：总表 + 分域 + Wilson 95% 置信区间 + 逐维明细，输出 JSON 供论文制表。"""
+"""Full six-dimension evaluation: overall + per-domain + Wilson 95% CIs + per-dim detail; writes JSON for the paper tables."""
 import json
 import math
 import re
@@ -103,13 +103,13 @@ def main(pred_path, gold_path):
            "missed": missed}
     json.dump(out, open("eval6d_full_result.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    print("=== 总体（Wilson 95% CI）===")
+    print("=== overall (Wilson 95% CI) ===")
     for d in DIMS:
         print(f"  {d:<9} {out['overall'][d]['str']}  ({out['overall'][d]['k']}/{out['overall'][d]['n']})")
-    print("\n=== 分域（六维全对）===")
+    print("\n=== per-domain (all-correct) ===")
     for dom, v in out["by_domain"].items():
         print(f"  {dom:<14} {v['all']}")
-    print(f"\n未匹配 {len(missed)}:", missed[:10])
+    print(f"\nunmatched {len(missed)}:", missed[:10])
     return out
 
 

@@ -1,4 +1,4 @@
-"""快速金标准构建：按去重后的 (en, domain) 只检索一次，再组装。"""
+"""Fast gold construction: retrieve once per deduplicated (en, domain), then assemble."""
 import json
 import sys
 from retrieve import retrieve

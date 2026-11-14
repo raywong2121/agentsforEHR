@@ -1,9 +1,12 @@
-"""临床文本 -> OHDSI 标准概念 编码管线（抽取 → 检索-重述循环 → 选择 → 覆盖校验 → 输出）。
+"""Clinical text -> OMOP standard-concept coding pipeline.
 
-设计原则：不靠词库查表。中文→标准概念的桥，由"模型给多候选 + 检索反馈 + 重述"的
-循环策略完成（agentic search）。词表只做确定性检索。
+Extraction -> retrieval-reformulation loop -> selection -> coverage check ->
+six-attribute output. The Chinese->standard-concept bridge is performed by an
+agentic search loop (model proposes candidates, retrieval feeds back, the model
+reformulates); the vocabulary only performs deterministic retrieval.
 
-模型调用走 Dify 控制台（登录态 + model_config 覆盖），或直连 DeepSeek API（有 key 时）。
+Model calls go through the Dify console (login session + model_config override)
+or directly to the DeepSeek API when a key is present.
 """
 import json
 import os
@@ -52,7 +55,7 @@ REFORMULATE_PROMPT = (
 
 
 def llm(messages, max_tokens=500, json_mode=False):
-    # 有直连 API key 时优先；否则走 Dify 控制台
+    # prefer the direct API key; otherwise use the Dify console
     key = os.environ.get("DEEPSEEK_API_KEY")
     if key:
         model = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
@@ -67,13 +70,13 @@ def llm(messages, max_tokens=500, json_mode=False):
         with urllib.request.urlopen(req, timeout=90) as r:
             return json.load(r)["choices"][0]["message"]["content"]
 
-    system = next((m["content"] for m in messages if m["role"] == "system"), "你是助手。")
+    system = next((m["content"] for m in messages if m["role"] == "system"), "You are an assistant.")
     user = next((m["content"] for m in messages if m["role"] == "user"), "")
     return flash.chat(system, user, max_tokens=max_tokens, json_mode=json_mode)["text"]
 
 
 def _normalize(value):
-    """把模型可能返回的多种形状统一成 [dict]。"""
+    """Normalize the various shapes the model may return into a list of dicts."""
     if isinstance(value, dict):
         for key in ("data", "mentions", "concepts", "items", "result"):
             if isinstance(value.get(key), list):
@@ -107,13 +110,13 @@ def extract(text: str) -> list[dict]:
     try:
         return _normalize(json.loads(raw))
     except (ValueError, TypeError):
-        raw = llm(msgs + [{"role": "user", "content": "只输出 JSON 数组，不要任何解释或代码围栏。"}],
+        raw = llm(msgs + [{"role": "user", "content": "Only output a JSON array; no explanation or code fences."}],
                   max_tokens=1600, json_mode=True)
         return _normalize(json.loads(raw))
 
 
 def _merge(cands_list, domain):
-    """合并候选；优先级：同域 > 精确/同义(src小) > 模型给的术语顺序(term_idx小)。"""
+    """Merge candidates; priority: same domain > exact/synonym (smaller src) > model term order (smaller term_idx)."""
     merged = {}
     for cands in cands_list:
         for c in cands:
@@ -121,14 +124,14 @@ def _merge(cands_list, domain):
             if k not in merged or (int(c["src"]), int(c.get("term_idx", 99))) < (
                     int(merged[k]["src"]), int(merged[k].get("term_idx", 99))):
                 merged[k] = c
-    # 排序：强匹配(src<=2)优先；同档内按模型术语顺序；再按 src/同域/名字长度
+    # sort: strong matches (src<=2) first; within a tier by model term order; then src / same-domain / name length
     return sorted(merged.values(), key=lambda x: (
         0 if int(x["src"]) <= 2 else 1, int(x.get("term_idx", 99)), int(x["src"]),
         0 if (domain and x["domain"] == domain) else 1, len(x["concept_name"])))
 
 
 def gather(span: str, zh: str, ens, domain: str | None, max_rounds: int | None = None) -> list[dict]:
-    """检索-反馈-重述循环：多英文候选检索；无精确命中时让模型换术语再检索。"""
+    """Retrieval-feedback-reformulation loop: retrieve for each English term; on no exact hit, ask the model for new terms."""
     if max_rounds is None:
         max_rounds = int(os.environ.get("GATHER_ROUNDS", "2"))
     terms = [t for t in (ens or []) if isinstance(t, str) and t.strip()]
@@ -142,16 +145,16 @@ def gather(span: str, zh: str, ens, domain: str | None, max_rounds: int | None =
             tried.add(key)
             got = retrieve(t.strip(), domain)
             if not got or int(got[0]["src"]) > 2:
-                got = got + retrieve(t.strip(), None)   # 合并全域，同域优先留给 _merge
+                got = got + retrieve(t.strip(), None)   # merge with all-domain results; same-domain priority is left to _merge
             for c in got:
-                c["term_idx"] = t_idx                    # 记录模型候选顺序
+                c["term_idx"] = t_idx                    # record the model's term order
             pools.append(got)
         cands = _merge(pools, domain)
-        if cands and int(cands[0]["src"]) <= 2:   # 已有精确/同义命中，收工
+        if cands and int(cands[0]["src"]) <= 2:   # strong match found, done
             return cands
         if rnd >= max_rounds:
             break
-        # 反馈重述：把"没命中"喂回模型，让它换一组英文术语
+        # feedback reformulation: feed the miss back to the model for fresh terms
         tried_txt = ", ".join(sorted(tried)) or "(无)"
         prompt = REFORMULATE_PROMPT.format(span=span, zh=zh, domain=domain or "临床", tried=tried_txt)
         try:
@@ -167,10 +170,10 @@ def gather(span: str, zh: str, ens, domain: str | None, max_rounds: int | None =
 
 def select(span: str, zh: str, ens, cands: list[dict], domain: str | None = None,
            limit: int = 8, lessons: str = "") -> int | None:
-    """从候选中选唯一 concept_id，或弃权(None)。仅在无精确/同义命中时调用。"""
+    """Pick a single concept_id from the candidates, or abstain (None). Only called when there is no exact/synonym hit."""
     if not cands:
         return None
-    if int(cands[0]["src"]) <= 2 and not lessons:   # 有经验时必须走模型判断
+    if int(cands[0]["src"]) <= 2 and not lessons:   # with prior experience, always defer to the model
         return cands[0]["concept_id"]
     cands = cands[:limit]
     menu = "\n".join(f"{i}: {c['concept_id']} {c['concept_name']} ({c['domain']})" for i, c in enumerate(cands))
@@ -203,7 +206,7 @@ VERIFY_PROMPT = (
 
 
 def verify(span: str, zh: str, name: str, cid: int, domain: str | None) -> str:
-    """自检：判断已选概念是否与原文片段语义一致。返回 match/narrow/broad/mismatch/unknown。"""
+    """Self-check: does the selected concept match the source span? Returns match/narrow/broad/mismatch/unknown."""
     prompt = VERIFY_PROMPT.format(span=span, zh=zh, name=name, cid=cid, domain=domain or "临床")
     try:
         raw = llm([{"role": "user", "content": prompt}], max_tokens=10)
@@ -217,7 +220,7 @@ def verify(span: str, zh: str, name: str, cid: int, domain: str | None) -> str:
 
 
 def reformulate_for_retry(span: str, zh: str, bad_name: str, verdict: str, domain: str | None) -> list[str]:
-    """自检失败后：让模型换更合适的英文术语（闭环的修正步）。"""
+    """After a failed self-check: ask the model for better English terms (the correction step of the loop)."""
     prompt = (
         f"临床片段「{span}」（中文概念：{zh}，应属 {domain or '临床'} 域）。\n"
         f"之前选的标准概念「{bad_name}」被判定为「{verdict}」（不匹配/粒度不对）。\n"
@@ -258,8 +261,8 @@ def run_case(text: str) -> dict:
                         ens = list(dict.fromkeys(_tg + list(ens)))
                 except Exception:
                     pass
-            cands = gather(span, zh, ens, domain)          # 检索-重述循环
-            cands_cn = retrieve_cn(span)                   # 中文直达只作兜底信号
+            cands = gather(span, zh, ens, domain)          # retrieval-reformulation loop
+            cands_cn = retrieve_cn(span)                   # direct Chinese bridge as a fallback signal only
             if os.environ.get("NO_MEMORY") == "1":
                 _has_exp = False
             else:
@@ -291,7 +294,7 @@ def run_case(text: str) -> dict:
             else:
                 reason = "候选不足"
 
-            # ===== 闭环：自检 → 不对则修正重搜 → 再自检 → 仍不对则弃权 =====
+            # ===== loop: verify -> fix & re-retrieve -> re-verify -> else abstain =====
             if os.environ.get("NO_VERIFY") == "1":
                 _skip_verify = True
             else:
@@ -316,7 +319,8 @@ def run_case(text: str) -> dict:
             _no_checks = True
         else:
             _no_checks = False
-        # 泛化裸域概念拒绝：最终结果不允许是裸域名词（Measurement/Procedure 等），换同域覆盖 ens 词元最多的候选
+        # generic bare-domain rejection: the final result must not be a bare domain name
+        # (Measurement/Procedure ...); replace with the same-domain candidate covering the most ens tokens
         if not _no_checks and cid is not None and name and name.strip().lower() in {
                 "measurement", "procedure", "condition", "observation", "drug",
                 "spec anatomic site", "clinical finding", "substance", "imaging"}:
@@ -343,14 +347,15 @@ def run_case(text: str) -> dict:
                 cid, name = _best[1]["concept_id"], _best[1]["concept_name"]
                 reason = "泛化裸域概念已被具体概念替换"
 
-        # 过弃权否决：确定性的最后防线——若最终弃权，但顶部候选覆盖原文核心英文词且同域，则接受
+        # abstention veto: deterministic last line - if the final answer abstained but the
+        # top candidate is a same-domain strong match, accept it
         if not _no_checks and cid is None and cands:
             _top = cands[0]
             if int(_top.get("src", 9)) <= 2 and (domain is None or _top["domain"] == domain):
                 cid, name = _top["concept_id"], _top["concept_name"]
                 reason = "弃权被否决（顶部候选为同域强匹配）"
 
-        # 部位映射到解剖学标准概念（Spec Anatomic Site）
+        # map the site to an anatomic-site standard concept (Spec Anatomic Site)
         site_txt = m.get("site")
         site_en = m.get("site_en")
         site_cid, site_name = None, ""
@@ -370,13 +375,13 @@ def run_case(text: str) -> dict:
             "concept_id": cid, "concept_name": name or "",
             "status": "mapped" if cid else "unmapped",
             "reason": reason,
-            # 失败模式诊断所需：当时的候选集与英文候选词
+            # keep the candidate set and English terms for failure-mode diagnosis
             "candidates": [{"id": c["concept_id"], "name": c["concept_name"],
                             "src": int(c["src"]), "domain": c["domain"]}
                            for c in (cands or [])[:10]],
             "ens": list(ens or []),
         })
-    # 去重（ASCII 后缀子串）+ 部位限定词剔除
+    # dedupe (ASCII suffix-substring) and drop site qualifiers
     kept = []
     for r in rows:
         dup = any(r is not o and r["span"] != o["span"] and o["span"].endswith(r["span"])
@@ -401,7 +406,7 @@ def render(result: dict) -> str:
 if __name__ == "__main__":
     print(render(run_case("患者发热。")))
 
-# ============ 抽取缓存（用于双臂对照实验，保证两臂共享同一份抽取结果） ============
+# ============ extraction cache (for two-arm runs so both arms share extractions) ============
 _CACHE_PATH = os.path.join(os.path.dirname(__file__), "extract_cache.json")
 _CACHE = None
 
@@ -420,7 +425,7 @@ def _cache_load():
 
 
 def extract_cached(text: str) -> list[dict]:
-    """CACHE_EXTRACT=1 时按文本哈希缓存抽取结果；否则等价于 extract()。"""
+    """With CACHE_EXTRACT=1, cache extractions by text hash; otherwise equivalent to extract()."""
     if os.environ.get("CACHE_EXTRACT") != "1":
         return extract(text)
     import hashlib
