@@ -312,8 +312,12 @@ def run_case(text: str) -> dict:
                     if not fixed:
                         cid, name = None, None
                         reason = f"自检未通过({verdict})，已弃权"
+        if os.environ.get("NO_CHECKS") == "1":
+            _no_checks = True
+        else:
+            _no_checks = False
         # 泛化裸域概念拒绝：最终结果不允许是裸域名词（Measurement/Procedure 等），换同域覆盖 ens 词元最多的候选
-        if cid is not None and name and name.strip().lower() in {
+        if not _no_checks and cid is not None and name and name.strip().lower() in {
                 "measurement", "procedure", "condition", "observation", "drug",
                 "spec anatomic site", "clinical finding", "substance", "imaging"}:
             _ens_toks = set()
@@ -340,7 +344,7 @@ def run_case(text: str) -> dict:
                 reason = "泛化裸域概念已被具体概念替换"
 
         # 过弃权否决：确定性的最后防线——若最终弃权，但顶部候选覆盖原文核心英文词且同域，则接受
-        if cid is None and cands:
+        if not _no_checks and cid is None and cands:
             _top = cands[0]
             if int(_top.get("src", 9)) <= 2 and (domain is None or _top["domain"] == domain):
                 cid, name = _top["concept_id"], _top["concept_name"]

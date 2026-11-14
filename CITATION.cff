@@ -1,28 +1,25 @@
 cff-version: 1.2.0
 message: >-
-  Cite this repository as the code and data archive accompanying the
-  manuscript. The attribution below identifies the publishing GitHub account;
-  the confirmed manuscript author list belongs to the paper itself. No
-  journal DOI is asserted here.
+  Cite this repository as the source-code archive accompanying the manuscript.
+  The attribution below identifies the publishing GitHub account; the
+  confirmed manuscript author list belongs to the paper itself. No journal
+  DOI is asserted here.
 type: software
 title: >-
   Six-Dimension Complete Coding Agent for Chinese Clinical Free Text to OMOP
-  Standard Concepts (面向 OHDSI/OMOP 的中文临床文本概念编码：一种六维完整编码的智能体方法)
+  Standard Concepts
 authors:
   - name: raywong2121
 repository-code: https://github.com/raywong2121/agentsforEHR
 url: https://github.com/raywong2121/agentsforEHR
 abstract: >-
-  Research code and evaluation data for coding Chinese clinical free text into
-  OMOP standard concepts as six-attribute records (concept, assertion/time,
-  value, specimen, subject, anatomic site). Pipeline: model extraction,
-  dual-path vocabulary retrieval (ICD10CN Maps-to bridge + English
-  name/synonym search), bounded reformulation, selection or explicit
-  abstention, self-verification with one correction cycle, deterministic
-  checks, and strategy-level memory with human approval gates. Evaluation:
-  100 synthetic cases / 1,013 facts, six-dimension scoring with Wilson
-  intervals, zero-shot baseline, AI-adjudicated gold (independent clinician
-  spot-check pending).
+  Source code for coding Chinese clinical free text into OMOP standard
+  concepts as six-attribute records (concept, assertion/time, value, specimen,
+  subject, anatomic site). Pipeline: model extraction, dual-path vocabulary
+  retrieval (ICD10CN Maps-to bridge + English name/synonym search), bounded
+  reformulation, selection or explicit abstention, self-verification with one
+  correction cycle, deterministic checks, and strategy-level memory with human
+  approval gates. Evaluation data and results are not distributed here.
 keywords:
   - OHDSI
   - OMOP CDM
@@ -30,5 +27,4 @@ keywords:
   - concept mapping
   - Chinese clinical text
   - agentic coding
-  - six-dimension evaluation
 license: NOASSERTION

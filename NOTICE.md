@@ -1,34 +1,39 @@
-# 公开归档与第三方材料说明
+# Public Archive and Third-Party Materials Notice
 
-本仓库是研究代码与评测数据的公开归档，配合论文
-《面向 OHDSI/OMOP 的中文临床文本概念编码：一种六维完整编码的智能体方法》。
-**本仓库未附加开源许可证**（`CITATION.cff` 中 `license: NOASSERTION`）。
-公开可见不等于自动授予修改、再分发、再许可或商业使用的全部权利；这些用途应
-由相关权利人另行明确。本文不创设新的许可授权，也不替代第三方原有权利条件。
+This repository is a public archive of the research source code for coding
+Chinese clinical free text into OMOP standard concepts as six-attribute
+records. **No open-source license is attached** (`CITATION.cff` carries
+`license: NOASSERTION`). Public visibility does not by itself grant rights to
+modify, redistribute, sublicense, or use commercially; such uses must be
+authorized separately by the rights holder. This notice creates no new
+licenses and does not override third-party rights.
 
-## 公开范围
+## What is published
 
-公开内容限于：管线与评测源码（`src/`）、提示词与确定性规则说明（`prompts/`）、
-只读检索 SQL（`sql/`）、合成病例与金标准及预测日志（`data/`）、离线契约测试
-（`tests/`）、文档与论文全文（`docs/`）、论文图（`figures/`，SVG 源与 PNG 渲染）。
+Source code (`src/`), prompt and deterministic-rule documentation
+(`prompts/`), read-only retrieval SQL (`sql/`), and offline contract tests
+(`tests/`).
 
-仓库不包含：模型或数据库密码、API key、Cookie、SSH 私钥、真实病历、词表数据库
-整库、Dify 控制台管理端源码、或云模型会话转储。模型端点与数据库连接信息一律
-通过环境变量配置（见 `README.md`）。
+Not included: model or database credentials, API keys, cookies, SSH keys,
+patient records, vocabulary database dumps, Dify console management source, or
+raw model session transcripts. Model and database endpoints are configured
+exclusively through environment variables (see `README.md`).
 
-## OHDSI 词表及第三方材料
+## OHDSI vocabulary and third-party software
 
-`data/` 中的金标准与预测日志包含少量 OHDSI 标准概念的名称与编号，仅用于论文
-评测的透明复现，不构成词表内容的再分发。OHDSI 生态与标准化词表涉及不同来源的
-词汇体系、数据与许可；使用者需独立确认所部署词表及其来源词汇的访问和使用条件。
+The OHDSI ecosystem and standardized vocabularies involve multiple vocabulary
+systems, data, and licenses. Users must independently confirm the access and
+use terms of the vocabulary they deploy. This repository distributes no
+vocabulary content.
 
-模型服务（DeepSeek 或 Dify 平台）与所用模型权重各自遵守其权利人与服务方的条款。
-本仓库列出归档时的模型与参数配置，未将这些第三方的许可改为本仓库许可。
+Model services (DeepSeek or the Dify platform) and model weights are subject
+to their providers' terms. Archiving configuration parameters here does not
+relicense any third-party software.
 
-## 科研声明
+## Research statement
 
-离线测试验证的是数据完整性与评测代码的复现性（12 项契约检查），不证明医学概念
-映射的临床正确性、信息无遗漏或临床有效性。论文报告的准确率建立在合成数据与经
-作者裁定的金标准之上，临床医生的独立校核尚未完成；相关边界见 `docs/research-status.md`
-与论文第 6 节。`CITATION.cff` 的署名仅标识发布归档的 GitHub 账号，正式论文作者
-名单以论文为准。
+The offline tests are engineering contract checks (data-independent smoke
+tests), not clinical validation. Reported accuracy figures and evaluation
+artifacts are not distributed in this repository. The account name in
+`CITATION.cff` identifies only the publishing GitHub account; the confirmed
+author list belongs to the manuscript.
