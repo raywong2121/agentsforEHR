@@ -1,0 +1,8491 @@
+{
+ "cases": [
+  {
+   "id": "R001",
+   "text": "患者男，58岁，因乏力3天就诊。伴恶心，有便秘。既往慢性心力衰竭，长期服用胰岛素。查体：血压165/110mmHg。心电图示异常，白细胞12.5×10^9/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R002",
+   "text": "患者女，65岁，因乏力2天就诊。伴头晕，有腹泻。既往缺铁性贫血，长期服用氨氯地平。查体：心率102次/分，双肺哮鸣音。胃镜示异常，空腹血糖13.5mmol/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R003",
+   "text": "患者男，34岁，因发热半年就诊。伴便秘，有嗳气。既往2型糖尿病，长期服用呋塞米。查体：心率76次/分，双肺湿啰音。头颅CT示异常，空腹血糖13.5mmol/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R004",
+   "text": "患者女，30岁，因腹痛2天就诊。伴头晕，有嗳气。既往冠心病，长期服用氨氯地平。查体：心率76次/分，双肺湿啰音。腹部超声示异常，空腹血糖13.5mmol/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R005",
+   "text": "患者男，25岁，因反酸3个月就诊。伴失眠，有腹痛。既往冠心病，长期服用布洛芬。查体：心率102次/分，双肺哮鸣音。头颅CT示异常，空腹血糖13.5mmol/L。诊断：冠心病。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R006",
+   "text": "患者女，70岁，因腹泻2天就诊。伴视物模糊，有头痛。既往肺炎，长期服用呋塞米。查体：心率76次/分，上腹压痛。心电图示异常，C反应蛋白45mg/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R007",
+   "text": "患者男，52岁，因乏力1周就诊。伴水肿，无恶心。既往慢性心力衰竭，长期服用奥美拉唑。查体：体温38.5℃。胸部CT示异常，血红蛋白88g/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R008",
+   "text": "患者女，65岁，因咳痰2周就诊。伴发热，无咳嗽。既往胃溃疡，长期服用奥美拉唑。查体：心率76次/分，双肺哮鸣音。胸部CT示异常，空腹血糖13.5mmol/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R009",
+   "text": "患者男，30岁，因视物模糊3个月就诊。伴头晕，无咳嗽。既往慢性肾脏病，长期服用奥美拉唑。查体：心率102次/分。心电图示异常，白细胞12.5×10^9/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R010",
+   "text": "患者女，70岁，因发热1个月就诊。伴呕吐，有咳嗽。既往哮喘，长期服用呋塞米。查体：血压150/95mmHg，双肺湿啰音。头颅CT示异常，白细胞12.5×10^9/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R011",
+   "text": "患者男，70岁，因反酸半年就诊。伴气促，有失眠。既往哮喘，长期服用氨氯地平。查体：心率88次/分，双肺湿啰音。腹部超声示异常，肌酐186μmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R012",
+   "text": "患者女，52岁，因胸闷2天就诊。伴头晕，有便秘。既往脑梗死，长期服用头孢曲松。查体：血压165/110mmHg。心电图示异常，肌酐186μmol/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R013",
+   "text": "患者男，70岁，因反酸2周就诊。伴腹泻，无腹痛。既往缺铁性贫血，长期服用氨氯地平。查体：体温37.8℃，双肺湿啰音。心电图示异常，白细胞12.5×10^9/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R014",
+   "text": "患者女，25岁，因水肿2天就诊。伴咳痰，有头晕。既往慢性心力衰竭，长期服用胰岛素。查体：体温38.5℃，双下肢水肿。心电图示异常，血红蛋白88g/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R015",
+   "text": "患者男，52岁，因腹泻半年就诊。伴咳嗽，无水肿。既往甲状腺功能亢进，长期服用呋塞米。查体：心率102次/分，双下肢水肿。心电图示异常，血红蛋白88g/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R016",
+   "text": "患者女，34岁，因失眠2天就诊。伴腹痛，无胸痛。既往高血压，长期服用二甲双胍。查体：心率102次/分，上腹压痛。心电图示异常，肌酐186μmol/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R017",
+   "text": "患者男，78岁，因发热半年就诊。伴便秘，有呕吐。既往慢性心力衰竭，长期服用阿司匹林。查体：心率88次/分，双肺湿啰音。胸部CT示异常，C反应蛋白45mg/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R018",
+   "text": "患者女，34岁，因头痛3个月就诊。伴腹痛，无气促。既往高血压，长期服用胰岛素。查体：体温36.9℃。头颅CT示异常，肌酐186μmol/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R019",
+   "text": "患者男，70岁，因恶心2天就诊。伴发热，有腹痛。既往心房颤动，长期服用阿司匹林。查体：血压130/80mmHg，上腹压痛。头颅CT示异常，空腹血糖13.5mmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R020",
+   "text": "患者女，30岁，因嗳气2天就诊。伴腹痛，无咳嗽。既往慢性心力衰竭，长期服用奥美拉唑。查体：体温36.9℃，上腹压痛。胃镜示异常，肌酐186μmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R021",
+   "text": "患者男，78岁，因腹痛2周就诊。伴失眠，无胸痛。既往高血压，长期服用氨氯地平。查体：血压130/80mmHg。胃镜示异常，肌酐186μmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R022",
+   "text": "患者女，45岁，因咳嗽1个月就诊。伴反酸，有乏力。既往慢性心力衰竭，长期服用头孢曲松。查体：心率102次/分，双肺哮鸣音。心电图示异常，血红蛋白88g/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R023",
+   "text": "患者男，52岁，因胸痛3个月就诊。伴恶心，有气促。既往肺炎，长期服用二甲双胍。查体：体温38.5℃，双下肢水肿。心电图示异常，白细胞12.5×10^9/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R024",
+   "text": "患者女，78岁，因气促3天就诊。伴胸闷，有乏力。既往2型糖尿病，长期服用氨氯地平。查体：血压165/110mmHg，双肺哮鸣音。心电图示异常，肌酐186μmol/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R025",
+   "text": "患者男，78岁，因咳痰1周就诊。伴乏力，无失眠。既往慢性肾脏病，长期服用氨氯地平。查体：心率92次/分，上腹压痛。腹部超声示异常，血红蛋白88g/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R026",
+   "text": "患者女，78岁，因嗳气3个月就诊。伴咳嗽，有气促。既往脑梗死，长期服用阿司匹林。查体：血压130/80mmHg，双肺湿啰音。胃镜示异常，肌酐186μmol/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R027",
+   "text": "患者男，30岁，因咳痰2天就诊。伴腹泻，有咳嗽。既往慢性心力衰竭，长期服用二甲双胍。查体：心率92次/分，上腹压痛。头颅CT示异常，空腹血糖13.5mmol/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R028",
+   "text": "患者女，78岁，因恶心1周就诊。伴胸闷，无头晕。既往肺炎，长期服用氨氯地平。查体：体温36.9℃，双下肢水肿。胃镜示异常，C反应蛋白45mg/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R029",
+   "text": "患者男，34岁，因气促1周就诊。伴腹痛，有嗳气。既往甲状腺功能亢进，长期服用氨氯地平。查体：体温37.8℃，上腹压痛。腹部超声示异常，肌酐186μmol/L。诊断：冠心病。",
+   "mentions": [
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R030",
+   "text": "患者女，45岁，因头晕1个月就诊。伴心悸，有发热。既往慢性心力衰竭，长期服用氨氯地平。查体：血压160/100mmHg，咽部充血。胃镜示异常，白细胞12.5×10^9/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R031",
+   "text": "患者男，58岁，因便秘3天就诊。伴气促，无嗳气。既往慢性心力衰竭，长期服用头孢曲松。查体：血压130/80mmHg，上腹压痛。心电图示异常，空腹血糖13.5mmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R032",
+   "text": "患者女，30岁，因失眠2天就诊。伴心悸，无发热。既往心房颤动，长期服用头孢曲松。查体：血压150/95mmHg，双下肢水肿。胃镜示异常，肌酐186μmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R033",
+   "text": "患者男，34岁，因咳嗽2天就诊。伴腹痛，无心悸。既往高血压，长期服用二甲双胍。查体：体温36.9℃，咽部充血。腹部超声示异常，C反应蛋白45mg/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R034",
+   "text": "患者女，58岁，因气促3天就诊。伴视物模糊，有腹痛。既往2型糖尿病，长期服用二甲双胍。查体：心率92次/分，双肺湿啰音。胸部CT示异常，C反应蛋白45mg/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R035",
+   "text": "患者男，58岁，因便秘半年就诊。伴腹痛，无恶心。既往心房颤动，长期服用氨氯地平。查体：心率102次/分，咽部充血。胃镜示异常，肌酐186μmol/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R036",
+   "text": "患者女，52岁，因呕吐半年就诊。伴反酸，有胸痛。既往高血压，长期服用布洛芬。查体：心率102次/分，上腹压痛。头颅CT示异常，肌酐186μmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R037",
+   "text": "患者男，52岁，因头晕3天就诊。伴心悸，无咳嗽。既往2型糖尿病，长期服用头孢曲松。查体：血压150/95mmHg，双下肢水肿。头颅CT示异常，白细胞12.5×10^9/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R038",
+   "text": "患者女，78岁，因嗳气3天就诊。伴气促，有便秘。既往慢性肾脏病，长期服用头孢曲松。查体：心率102次/分，双下肢水肿。心电图示异常，血红蛋白88g/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R039",
+   "text": "患者男，58岁，因乏力3天就诊。伴视物模糊，有腹泻。既往慢性肾脏病，长期服用奥美拉唑。查体：血压150/95mmHg。腹部超声示异常，空腹血糖13.5mmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R040",
+   "text": "患者女，58岁，因胸痛1个月就诊。伴水肿，无咳嗽。既往慢性肾脏病，长期服用氨氯地平。查体：心率76次/分，双下肢水肿。胃镜示异常，白细胞12.5×10^9/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R041",
+   "text": "患者男，30岁，因失眠2天就诊。伴嗳气，无乏力。既往哮喘，长期服用阿司匹林。查体：体温37.8℃，上腹压痛。腹部超声示异常，C反应蛋白45mg/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R042",
+   "text": "患者女，78岁，因腹痛3天就诊。伴腹泻，有胸闷。既往脑梗死，长期服用二甲双胍。查体：体温37.8℃，上腹压痛。腹部超声示异常，空腹血糖13.5mmol/L。诊断：脑梗死。",
+   "mentions": [
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R043",
+   "text": "患者男，30岁，因胸闷1周就诊。伴呕吐，有气促。既往冠心病，长期服用二甲双胍。查体：心率88次/分，上腹压痛。腹部超声示异常，肌酐186μmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R044",
+   "text": "患者女，34岁，因头晕半年就诊。伴咳嗽，无腹泻。既往缺铁性贫血，长期服用头孢曲松。查体：心率88次/分，双下肢水肿。腹部超声示异常，血红蛋白88g/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R045",
+   "text": "患者男，65岁，因呕吐2天就诊。伴咳嗽，无腹泻。既往肺炎，长期服用二甲双胍。查体：心率76次/分，双肺湿啰音。腹部超声示异常，肌酐186μmol/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R046",
+   "text": "患者女，70岁，因胸痛3天就诊。伴头痛，有心悸。既往心房颤动，长期服用胰岛素。查体：血压130/80mmHg。胃镜示异常，白细胞12.5×10^9/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R047",
+   "text": "患者男，45岁，因恶心1周就诊。伴呕吐，有心悸。既往胃溃疡，长期服用氨氯地平。查体：体温38.5℃。胃镜示异常，白细胞12.5×10^9/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R048",
+   "text": "患者女，30岁，因发热3个月就诊。伴视物模糊，有反酸。既往心房颤动，长期服用头孢曲松。查体：体温36.9℃，双肺哮鸣音。心电图示异常，C反应蛋白45mg/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R049",
+   "text": "患者男，25岁，因恶心半年就诊。伴便秘，无腹泻。既往慢性心力衰竭，长期服用氨氯地平。查体：血压165/110mmHg，上腹压痛。胃镜示异常，血红蛋白88g/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R050",
+   "text": "患者女，78岁，因呕吐1周就诊。伴腹痛，有恶心。既往心房颤动，长期服用奥美拉唑。查体：体温38.5℃，双肺湿啰音。头颅CT示异常，肌酐186μmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R051",
+   "text": "患者男，34岁，因呕吐半年就诊。伴腹痛，无便秘。既往心房颤动，长期服用头孢曲松。查体：血压150/95mmHg，双下肢水肿。腹部超声示异常，白细胞12.5×10^9/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R052",
+   "text": "患者女，25岁，因发热1个月就诊。伴水肿，有乏力。既往甲状腺功能亢进，长期服用氨氯地平。查体：心率92次/分，上腹压痛。头颅CT示异常，白细胞12.5×10^9/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R053",
+   "text": "患者男，52岁，因咳嗽2周就诊。伴恶心，有胸闷。既往胃溃疡，长期服用阿司匹林。查体：体温37.8℃。心电图示异常，白细胞12.5×10^9/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R054",
+   "text": "患者女，70岁，因胸痛2天就诊。伴咳痰，有反酸。既往肺炎，长期服用二甲双胍。查体：血压130/80mmHg，双肺哮鸣音。腹部超声示异常，肌酐186μmol/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R055",
+   "text": "患者男，52岁，因腹泻2周就诊。伴反酸，无恶心。既往慢性心力衰竭，长期服用二甲双胍。查体：心率76次/分。胸部CT示异常，白细胞12.5×10^9/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R056",
+   "text": "患者女，45岁，因气促2天就诊。伴腹泻，无胸闷。既往2型糖尿病，长期服用头孢曲松。查体：心率92次/分，咽部充血。胸部CT示异常，白细胞12.5×10^9/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R057",
+   "text": "患者男，25岁，因腹泻2天就诊。伴嗳气，无头痛。既往甲状腺功能亢进，长期服用奥美拉唑。查体：心率102次/分。胸部CT示异常，C反应蛋白45mg/L。诊断：冠心病。",
+   "mentions": [
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R058",
+   "text": "患者女，78岁，因头痛1周就诊。伴恶心，无胸闷。既往胃溃疡，长期服用布洛芬。查体：体温38.5℃，双下肢水肿。心电图示异常，空腹血糖13.5mmol/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R059",
+   "text": "患者男，52岁，因反酸3天就诊。伴腹痛，有发热。既往心房颤动，长期服用呋塞米。查体：体温39.2℃，双肺湿啰音。胸部CT示异常，C反应蛋白45mg/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "39.2℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R060",
+   "text": "患者女，78岁，因便秘1周就诊。伴咳嗽，有胸痛。既往慢性心力衰竭，长期服用布洛芬。查体：血压165/110mmHg，双肺湿啰音。心电图示异常，肌酐186μmol/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R061",
+   "text": "患者男，45岁，因胸闷2周就诊。伴胸痛，无心悸。既往2型糖尿病，长期服用胰岛素。查体：心率102次/分，双下肢水肿。胃镜示异常，C反应蛋白45mg/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R062",
+   "text": "患者女，34岁，因头痛半年就诊。伴反酸，无头晕。既往甲状腺功能亢进，长期服用胰岛素。查体：血压160/100mmHg，双下肢水肿。心电图示异常，C反应蛋白45mg/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R063",
+   "text": "患者男，52岁，因恶心2周就诊。伴胸闷，有腹痛。既往脑梗死，长期服用胰岛素。查体：体温37.8℃，双肺哮鸣音。心电图示异常，血红蛋白88g/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "37.8℃",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R064",
+   "text": "患者女，52岁，因水肿1周就诊。伴心悸，有胸闷。既往2型糖尿病，长期服用二甲双胍。查体：体温36.9℃，咽部充血。头颅CT示异常，空腹血糖13.5mmol/L。诊断：2型糖尿病。",
+   "mentions": [
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R065",
+   "text": "患者男，25岁，因呕吐3天就诊。伴胸闷，无失眠。既往慢性心力衰竭，长期服用呋塞米。查体：体温36.9℃，咽部充血。胸部CT示异常，空腹血糖13.5mmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R066",
+   "text": "患者女，34岁，因失眠1个月就诊。伴胸痛，无嗳气。既往冠心病，长期服用阿司匹林。查体：血压165/110mmHg，双肺湿啰音。头颅CT示异常，肌酐186μmol/L。诊断：冠心病。",
+   "mentions": [
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "冠心病",
+     "en": "coronary arteriosclerosis",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R067",
+   "text": "患者男，65岁，因视物模糊半年就诊。伴胸闷，有腹泻。既往脑梗死，长期服用奥美拉唑。查体：血压160/100mmHg，咽部充血。胃镜示异常，血红蛋白88g/L。诊断：脑梗死。",
+   "mentions": [
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R068",
+   "text": "患者女，70岁，因胸痛2周就诊。伴恶心，有腹泻。既往慢性肾脏病，长期服用头孢曲松。查体：心率92次/分，双肺湿啰音。胸部CT示异常，血红蛋白88g/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R069",
+   "text": "患者男，45岁，因胸闷3天就诊。伴头晕，有乏力。既往肺炎，长期服用奥美拉唑。查体：体温36.9℃，双肺湿啰音。心电图示异常，白细胞12.5×10^9/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R070",
+   "text": "患者女，52岁，因反酸3个月就诊。伴胸闷，有呕吐。既往高血压，长期服用头孢曲松。查体：心率76次/分，上腹压痛。头颅CT示异常，空腹血糖13.5mmol/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R071",
+   "text": "患者男，52岁，因胸闷1周就诊。伴头痛，无反酸。既往哮喘，长期服用氨氯地平。查体：血压160/100mmHg，上腹压痛。胸部CT示异常，肌酐186μmol/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R072",
+   "text": "患者女，70岁，因反酸1个月就诊。伴呕吐，有乏力。既往慢性心力衰竭，长期服用头孢曲松。查体：心率92次/分，双肺湿啰音。心电图示异常，空腹血糖13.5mmol/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R073",
+   "text": "患者男，30岁，因心悸1周就诊。伴咳嗽，有视物模糊。既往2型糖尿病，长期服用胰岛素。查体：血压160/100mmHg，双肺湿啰音。腹部超声示异常，白细胞12.5×10^9/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R074",
+   "text": "患者女，45岁，因嗳气1个月就诊。伴反酸，无腹泻。既往肺炎，长期服用二甲双胍。查体：体温36.9℃。胃镜示异常，血红蛋白88g/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R075",
+   "text": "患者男，25岁，因头晕半年就诊。伴失眠，无腹痛。既往高血压，长期服用布洛芬。查体：体温36.9℃。心电图示异常，C反应蛋白45mg/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R076",
+   "text": "患者女，65岁，因气促3个月就诊。伴乏力，有便秘。既往胃溃疡，长期服用二甲双胍。查体：血压150/95mmHg，咽部充血。头颅CT示异常，肌酐186μmol/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R077",
+   "text": "患者男，30岁，因发热3天就诊。伴腹泻，无胸痛。既往胃溃疡，长期服用阿司匹林。查体：血压160/100mmHg，双肺哮鸣音。胸部CT示异常，C反应蛋白45mg/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "阿司匹林",
+     "en": "aspirin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R078",
+   "text": "患者女，25岁，因便秘2天就诊。伴视物模糊，无腹痛。既往妊娠期糖尿病，长期服用头孢曲松。查体：心率76次/分，上腹压痛。胃镜示异常，白细胞12.5×10^9/L。诊断：妊娠期糖尿病。",
+   "mentions": [
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "妊娠期糖尿病",
+     "en": "gestational diabetes",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "妊娠期糖尿病",
+     "en": "gestational diabetes",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R079",
+   "text": "患者男，34岁，因发热3个月就诊。伴腹泻，无恶心。既往脑梗死，长期服用头孢曲松。查体：心率76次/分。心电图示异常，白细胞12.5×10^9/L。诊断：脑梗死。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R080",
+   "text": "患者女，65岁，因呕吐2天就诊。伴便秘，无腹泻。既往心房颤动，长期服用奥美拉唑。查体：心率76次/分，双下肢水肿。胃镜示异常，空腹血糖13.5mmol/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "76次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R081",
+   "text": "患者男，52岁，因呕吐3天就诊。伴心悸，无咳痰。既往高血压，长期服用胰岛素。查体：心率88次/分，双肺哮鸣音。腹部超声示异常，C反应蛋白45mg/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "呕吐",
+     "en": "vomiting",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R082",
+   "text": "患者女，78岁，因心悸3个月就诊。伴便秘，无发热。既往哮喘，长期服用胰岛素。查体：血压165/110mmHg，双下肢水肿。胃镜示异常，肌酐186μmol/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R083",
+   "text": "患者男，30岁，因腹痛半年就诊。伴胸痛，有失眠。既往脑梗死，长期服用布洛芬。查体：血压165/110mmHg，上腹压痛。胸部CT示异常，空腹血糖13.5mmol/L。诊断：脑梗死。",
+   "mentions": [
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R084",
+   "text": "患者女，45岁，因头晕2天就诊。伴胸闷，无咳嗽。既往2型糖尿病，长期服用氨氯地平。查体：心率88次/分，上腹压痛。胸部CT示异常，白细胞12.5×10^9/L。诊断：哮喘。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "哮喘",
+     "en": "asthma",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R085",
+   "text": "患者男，25岁，因嗳气3天就诊。伴胸闷，无腹痛。既往慢性心力衰竭，长期服用二甲双胍。查体：血压160/100mmHg。胸部CT示异常，血红蛋白88g/L。诊断：慢性心力衰竭。",
+   "mentions": [
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "160mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "100mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "慢性心力衰竭",
+     "en": "congestive heart failure",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R086",
+   "text": "患者女，45岁，因恶心2天就诊。伴视物模糊，有腹痛。既往缺铁性贫血，长期服用布洛芬。查体：体温38.5℃，双肺哮鸣音。头颅CT示异常，血红蛋白88g/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "布洛芬",
+     "en": "ibuprofen",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R087",
+   "text": "患者男，30岁，因心悸1个月就诊。伴咳痰，无发热。既往高血压，长期服用奥美拉唑。查体：血压130/80mmHg，双肺哮鸣音。头颅CT示异常，空腹血糖13.5mmol/L。诊断：高血压。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳痰",
+     "en": "productive cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "130mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "80mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "高血压",
+     "en": "essential hypertension",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R088",
+   "text": "患者女，34岁，因发热3个月就诊。伴心悸，无乏力。既往脑梗死，长期服用二甲双胍。查体：心率102次/分，双下肢水肿。胸部CT示异常，空腹血糖13.5mmol/L。诊断：脑梗死。",
+   "mentions": [
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "102次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "脑梗死",
+     "en": "cerebral infarction",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R089",
+   "text": "患者男，65岁，因头晕3个月就诊。伴咳嗽，无腹泻。既往胃溃疡，长期服用胰岛素。查体：心率92次/分，双肺哮鸣音。腹部超声示异常，白细胞12.5×10^9/L。诊断：胃溃疡。",
+   "mentions": [
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹泻",
+     "en": "diarrhea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "92次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "哮鸣音",
+     "en": "wheezing",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "超声",
+     "en": "ultrasonography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "腹部",
+     "site_en": "abdomen"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "胃溃疡",
+     "en": "gastric ulcer",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R090",
+   "text": "患者女，34岁，因反酸1个月就诊。伴心悸，有水肿。既往甲状腺功能亢进，长期服用胰岛素。查体：体温39.2℃，咽部充血。胃镜示异常，空腹血糖13.5mmol/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "39.2℃",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R091",
+   "text": "患者男，78岁，因反酸2周就诊。伴便秘，无腹痛。既往肺炎，长期服用奥美拉唑。查体：心率88次/分，上腹压痛。头颅CT示异常，C反应蛋白45mg/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "腹痛",
+     "en": "abdominal pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R092",
+   "text": "患者女，65岁，因视物模糊2天就诊。伴发热，有头痛。既往心房颤动，长期服用胰岛素。查体：体温38.5℃，上腹压痛。胸部CT示异常，肌酐186μmol/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "视物模糊",
+     "en": "blurred vision",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头痛",
+     "en": "headache",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "压痛",
+     "en": "abdominal tenderness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "上腹",
+     "site_en": "epigastrium"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R093",
+   "text": "患者男，52岁，因恶心2天就诊。伴心悸，有嗳气。既往心房颤动，长期服用胰岛素。查体：心率88次/分，双下肢水肿。头颅CT示异常，血红蛋白88g/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "嗳气",
+     "en": "burping",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "胰岛素",
+     "en": "insulin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "头颅",
+     "site_en": "head"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R094",
+   "text": "患者女，78岁，因咳嗽2天就诊。伴胸闷，无水肿。既往甲状腺功能亢进，长期服用二甲双胍。查体：心率88次/分，双肺湿啰音。胃镜示异常，空腹血糖13.5mmol/L。诊断：甲状腺功能亢进。",
+   "mentions": [
+    {
+     "span": "咳嗽",
+     "en": "cough",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "甲状腺功能亢进",
+     "en": "hyperthyroidism",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R095",
+   "text": "患者男，70岁，因便秘1周就诊。伴胸闷，有失眠。既往缺铁性贫血，长期服用头孢曲松。查体：血压150/95mmHg，咽部充血。胸部CT示异常，血红蛋白88g/L。诊断：缺铁性贫血。",
+   "mentions": [
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "失眠",
+     "en": "insomnia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "头孢曲松",
+     "en": "ceftriaxone",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "150mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "95mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "充血",
+     "en": "pharyngeal congestion",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "咽部",
+     "site_en": "pharynx"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "血红蛋白",
+     "en": "hemoglobin measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88g/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000963
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R096",
+   "text": "患者女，34岁，因心悸半年就诊。伴水肿，有恶心。既往2型糖尿病，长期服用氨氯地平。查体：血压165/110mmHg，双肺湿啰音。心电图示异常，C反应蛋白45mg/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "恶心",
+     "en": "nausea",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "2型糖尿病",
+     "en": "type 2 diabetes mellitus",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "氨氯地平",
+     "en": "amlodipine",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "收缩压",
+     "en": "systolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "165mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "舒张压",
+     "en": "diastolic blood pressure",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "110mmHg",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R097",
+   "text": "患者男，30岁，因胸闷1周就诊。伴便秘，有头晕。既往慢性肾脏病，长期服用二甲双胍。查体：心率88次/分，双下肢水肿。胸部CT示异常，白细胞12.5×10^9/L。诊断：肺炎。",
+   "mentions": [
+    {
+     "span": "胸闷",
+     "en": "chest tightness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "头晕",
+     "en": "dizziness",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "心率",
+     "en": "heart rate",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "88次/分",
+     "subject": "患者"
+    },
+    {
+     "span": "水肿",
+     "en": "edema",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双下肢",
+     "site_en": "both lower extremities"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "白细胞",
+     "en": "leukocyte count",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "12.5×10^9/L",
+     "specimen": "全血",
+     "subject": "患者",
+     "concept_id": 3000905
+    },
+    {
+     "span": "肺炎",
+     "en": "pneumonia",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R098",
+   "text": "患者女，78岁，因心悸3天就诊。伴乏力，无发热。既往心房颤动，长期服用二甲双胍。查体：体温39.2℃，双肺湿啰音。心电图示异常，C反应蛋白45mg/L。诊断：心房颤动。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "乏力",
+     "en": "fatigue",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "发热",
+     "en": "fever",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "二甲双胍",
+     "en": "metformin",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "39.2℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "心电图",
+     "en": "electrocardiographic procedure",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "C反应蛋白",
+     "en": "C-reactive protein measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "45mg/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4208414
+    },
+    {
+     "span": "心房颤动",
+     "en": "atrial fibrillation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R099",
+   "text": "患者男，30岁，因心悸半年就诊。伴反酸，无胸痛。既往缺铁性贫血，长期服用呋塞米。查体：体温36.9℃。胃镜示异常，肌酐186μmol/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "心悸",
+     "en": "palpitation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "胸痛",
+     "en": "chest pain",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "呋塞米",
+     "en": "furosemide",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "36.9℃",
+     "subject": "患者"
+    },
+    {
+     "span": "胃镜",
+     "en": "esophagogastroduodenoscopy",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": null,
+     "site_en": null
+    },
+    {
+     "span": "肌酐",
+     "en": "creatinine measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "186μmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4324383
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  },
+  {
+   "id": "R100",
+   "text": "患者女，30岁，因反酸1周就诊。伴便秘，无气促。既往缺铁性贫血，长期服用奥美拉唑。查体：体温38.5℃，双肺湿啰音。胸部CT示异常，空腹血糖13.5mmol/L。诊断：慢性肾脏病。",
+   "mentions": [
+    {
+     "span": "反酸",
+     "en": "acid reflux",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "便秘",
+     "en": "constipation",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    },
+    {
+     "span": "气促",
+     "en": "dyspnea",
+     "domain": "Condition",
+     "assertion": "否定",
+     "subject": "患者"
+    },
+    {
+     "span": "缺铁性贫血",
+     "en": "iron deficiency anemia",
+     "domain": "Condition",
+     "assertion": "既往",
+     "subject": "患者"
+    },
+    {
+     "span": "奥美拉唑",
+     "en": "omeprazole",
+     "domain": "Drug",
+     "assertion": "服用中",
+     "subject": "患者"
+    },
+    {
+     "span": "体温",
+     "en": "body temperature",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "38.5℃",
+     "subject": "患者"
+    },
+    {
+     "span": "湿啰音",
+     "en": "respiratory crackles",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者",
+     "site": "双肺",
+     "site_en": "both lungs"
+    },
+    {
+     "span": "CT",
+     "en": "computed tomography",
+     "domain": "Procedure",
+     "assertion": "检查",
+     "subject": "患者",
+     "site": "胸部",
+     "site_en": "chest"
+    },
+    {
+     "span": "空腹血糖",
+     "en": "fasting blood glucose measurement",
+     "domain": "Measurement",
+     "assertion": "肯定",
+     "value": "13.5mmol/L",
+     "specimen": "血清",
+     "subject": "患者",
+     "concept_id": 4156660
+    },
+    {
+     "span": "慢性肾脏病",
+     "en": "chronic kidney disease",
+     "domain": "Condition",
+     "assertion": "肯定",
+     "subject": "患者"
+    }
+   ]
+  }
+ ]
+}

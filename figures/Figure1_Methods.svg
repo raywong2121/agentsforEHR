@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.740157pt" height="609.448819pt" viewBox="0 0 518.740157 609.448819" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-12T18:14:27.108797</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609.448819 
+L 518.740157 609.448819 
+L 518.740157 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 132.944882 87.307087 
+L 263.905512 87.307087 
+Q 266.456693 87.307087 266.456693 84.755906 
+L 266.456693 62.07874 
+Q 266.456693 59.527559 263.905512 59.527559 
+L 132.944882 59.527559 
+Q 130.393701 59.527559 130.393701 62.07874 
+L 130.393701 84.755906 
+Q 130.393701 87.307087 132.944882 87.307087 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #f4f7f9; stroke: #ced7de; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 132.944882 122.740157 
+L 263.905512 122.740157 
+Q 266.456693 122.740157 266.456693 120.188976 
+L 266.456693 96.944882 
+Q 266.456693 94.393701 263.905512 94.393701 
+L 132.944882 94.393701 
+Q 130.393701 94.393701 130.393701 96.944882 
+L 130.393701 120.188976 
+Q 130.393701 122.740157 132.944882 122.740157 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #eef5f4; stroke: #ced7de; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 13.889764 244.913386 
+L 102.330709 244.913386 
+Q 104.88189 244.913386 104.88189 242.362205 
+L 104.88189 213.448819 
+Q 104.88189 210.897638 102.330709 210.897638 
+L 13.889764 210.897638 
+Q 11.338583 210.897638 11.338583 213.448819 
+L 11.338583 242.362205 
+Q 11.338583 244.913386 13.889764 244.913386 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #f4f7f9; stroke: #ced7de; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 135.779528 327.11811 
+L 280.913386 327.11811 
+Q 283.464567 327.11811 283.464567 324.566929 
+L 283.464567 281.480315 
+Q 283.464567 278.929134 280.913386 278.929134 
+L 135.779528 278.929134 
+Q 133.228346 278.929134 133.228346 281.480315 
+L 133.228346 324.566929 
+Q 133.228346 327.11811 135.779528 327.11811 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #ffffff; stroke: #ced7de; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 419.244094 320.314961 
+L 504.850394 320.314961 
+Q 507.401575 320.314961 507.401575 317.76378 
+L 507.401575 283.181102 
+Q 507.401575 280.629921 504.850394 280.629921 
+L 419.244094 280.629921 
+Q 416.692913 280.629921 416.692913 283.181102 
+L 416.692913 317.76378 
+Q 416.692913 320.314961 419.244094 320.314961 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #eef5f4; stroke: #237c80; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 135.779528 386.07874 
+L 329.102362 386.07874 
+Q 331.653543 386.07874 331.653543 383.527559 
+L 331.653543 348.944882 
+Q 331.653543 346.393701 329.102362 346.393701 
+L 135.779528 346.393701 
+Q 133.228346 346.393701 133.228346 348.944882 
+L 133.228346 383.527559 
+Q 133.228346 386.07874 135.779528 386.07874 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #faf3ec; stroke: #ced7de; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 419.244094 386.07874 
+L 504.850394 386.07874 
+Q 507.401575 386.07874 507.401575 383.527559 
+L 507.401575 348.944882 
+Q 507.401575 346.393701 504.850394 346.393701 
+L 419.244094 346.393701 
+Q 416.692913 346.393701 416.692913 348.944882 
+L 416.692913 383.527559 
+Q 416.692913 386.07874 419.244094 386.07874 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #faf3ec; stroke: #a76130; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 11.338583 51.023622 
+L 113.385827 51.023622 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 130.393701 51.023622 
+L 266.456693 51.023622 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 289.133858 51.023622 
+L 388.346457 51.023622 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 405.354331 51.023622 
+L 507.401575 51.023622 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 11.338583 155.905512 
+L 507.401575 155.905512 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #ced7de"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 133.228346 228.188976 
+L 206.929134 201.259843 
+L 280.629921 228.188976 
+L 206.929134 255.11811 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #ffffff; stroke: #233f5b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 282.047244 228.188976 
+L 462.047244 228.188976 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 333.354331 366.23622 
+L 365.669291 366.23622 
+L 365.669291 300.472441 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 11.338583 278.929134 
+L 11.338583 347.811024 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #a76130; stroke-width: 1.35"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 11.338583 454.96063 
+L 507.401575 454.96063 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 11.338583 471.968504 
+L 507.401575 471.968504 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #ced7de"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 11.338583 545.669291 
+L 507.401575 545.669291 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #ced7de"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 116.220472 43.937008 
+Q 121.889764 43.937008 126.385119 43.937008 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 124.185119 42.837008 
+L 126.385119 43.937008 
+L 124.185119 45.037008 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #233f5b; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 269.291339 43.937008 
+Q 277.795276 43.937008 285.125277 43.937008 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 282.925277 42.837008 
+L 285.125277 43.937008 
+L 282.925277 45.037008 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #233f5b; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 391.181102 43.937008 
+Q 396.850394 43.937008 401.345749 43.937008 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 399.145749 42.837008 
+L 401.345749 43.937008 
+L 399.145749 45.037008 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #233f5b; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 59.527559 75.11811 
+Q 59.527559 79.086614 59.527559 81.881182 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #3b6c8e; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 60.527559 79.881182 
+L 59.527559 81.881182 
+L 58.527559 79.881182 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #3b6c8e; stroke: #3b6c8e; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 107.149606 228.188976 
+Q 119.338583 228.188976 130.353623 228.188976 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 127.953623 226.988976 
+L 130.353623 228.188976 
+L 127.953623 229.388976 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #233f5b; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 462.047244 228.188976 
+Q 462.047244 253.275591 462.047244 277.188269 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 463.247244 274.788269 
+L 462.047244 277.188269 
+L 460.847244 274.788269 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 206.929134 256.535433 
+Q 206.929134 266.456693 206.929134 275.204017 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 208.129134 272.804017 
+L 206.929134 275.204017 
+L 205.729134 272.804017 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #233f5b; stroke: #233f5b; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 285.165354 300.472441 
+Q 350.07874 300.472441 413.81819 300.472441 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 411.41819 299.272441 
+L 413.81819 300.472441 
+L 411.41819 301.672441 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 206.929134 328.535433 
+Q 206.929134 336.472441 206.929134 343.235513 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #a76130; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 208.129134 340.835513 
+L 206.929134 343.235513 
+L 205.729134 340.835513 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #a76130; stroke: #a76130; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 365.669291 300.472441 
+Q 390.330709 300.472441 413.81819 300.472441 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 411.41819 299.272441 
+L 413.81819 300.472441 
+L 411.41819 301.672441 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 365.669291 366.23622 
+Q 390.330709 366.23622 413.81819 366.23622 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #a76130; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 411.41819 365.03622 
+L 413.81819 366.23622 
+L 411.41819 367.43622 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #a76130; stroke: #a76130; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 102.047244 577.700787 
+Q 106.299213 577.700787 109.377245 577.700787 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 107.497245 576.760787 
+L 109.377245 577.700787 
+L 107.497245 578.640787 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 204.094488 577.700787 
+Q 208.346457 577.700787 211.42449 577.700787 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 209.54449 576.760787 
+L 211.42449 577.700787 
+L 209.54449 578.640787 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 306.141732 577.700787 
+Q 310.393701 577.700787 313.471734 577.700787 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 311.591734 576.760787 
+L 313.471734 577.700787 
+L 311.591734 578.640787 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 408.188976 577.700787 
+Q 412.440945 577.700787 415.518978 577.700787 
+" clip-path="url(#pc066b9949d)" style="fill: none; stroke-dasharray: 3.15,2.1; stroke-dashoffset: 0; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 413.638978 576.760787 
+L 415.518978 577.700787 
+L 413.638978 578.640787 
+z
+" clip-path="url(#pc066b9949d)" style="fill: #237c80; stroke-dasharray: 3.15,2.1; stroke-dashoffset: 0; stroke: #237c80; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="11.338583" y="45.917352" transform="rotate(-0 11.338583 45.917352)">Extract facts</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="130.393701" y="45.917352" transform="rotate(-0 130.393701 45.917352)">Retrieve OMOP candidates</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="289.133858" y="45.917352" transform="rotate(-0 289.133858 45.917352)">Select a candidate</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="405.354331" y="45.917352" transform="rotate(-0 405.354331 45.917352)">Return records</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="11.338583" y="68.44958" transform="rotate(-0 11.338583 68.44958)">Chinese clinical text</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(11.338583 94.238445)">Fact spans and context</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(11.338583 103.26127)">Clinical domain</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(11.338583 112.284095)">1–3 English search terms</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #233f5b" transform="translate(136.062992 70.99435)">Chinese: ICD10CN → “Maps to”</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #233f5b" transform="translate(136.062992 79.4954)">→ standard concepts</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #237c80" transform="translate(136.062992 105.860492)">English: names / synonyms</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #237c80" transform="translate(136.062992 114.361542)">Exact or substring match</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(289.133858 68.159705)">Strong same-domain match</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(289.133858 76.892655)">+ no strategy: accept top.</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(289.133858 85.625605)">Otherwise: select or abstain</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(289.133858 94.358555)">within retrieved candidates.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #237c80" transform="translate(289.133858 124.569154)">Conditional verification</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #237c80" transform="translate(289.133858 133.070204)">(details in b)</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(405.354331 68.159705)">Six-attribute record</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(405.354331 76.892655)">or explicit unmapped</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(405.354331 85.625605)">Retain source span</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(405.354331 94.358555)">Cover extracted spans</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(405.354331 122.017972)">Intermediate records</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(405.354331 130.519022)">for downstream ETL</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(130.393701 136.191201)">Filter by domain; merge and rank:</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(130.393701 144.228451)">match strength → term order → domain</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="11.338583" y="167.372303" transform="rotate(-0 11.338583 167.372303)">Rules across stages: split BP; filter incompatible candidates; constrain acceptance / abstention; resolve concept–site representation.</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="17.007874" y="222.654304" transform="rotate(-0 17.007874 222.654304)">Selected candidate</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="17.007874" y="235.120335" transform="rotate(-0 17.007874 235.120335)">From selection in a</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #233f5b" transform="translate(170.258048 224.282623)">Exact-name match</text>
+    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #233f5b" transform="translate(173.496993 232.982164)">and no strategy?</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="306.141732" y="221.7975" transform="rotate(-0 306.141732 221.7975)">Yes: skip verification</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="188.503937" y="268.002224" transform="rotate(-0 188.503937 268.002224)">No</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="138.897638" y="290.402336" transform="rotate(-0 138.897638 290.402336)">Verify source–concept fit</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="138.897638" y="303.71876" transform="rotate(-0 138.897638 303.71876)">match</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #a76130" x="138.897638" y="316.191201" transform="rotate(-0 138.897638 316.191201)">narrow / broad / mismatch</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="422.362205" y="292.386588" transform="rotate(-0 422.362205 292.386588)">Encode</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="422.362205" y="304.852618" transform="rotate(-0 422.362205 304.852618)">Six attributes</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="325.984252" y="294.931358" transform="rotate(-0 325.984252 294.931358)">match</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #a76130" x="138.897638" y="358.150367" transform="rotate(-0 138.897638 358.150367)">One correction cycle</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="138.897638" y="370.899862" transform="rotate(-0 138.897638 370.899862)">Reformulate → retrieve → select → reverify</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="371.338583" y="329.230571" transform="rotate(-0 371.338583 329.230571)">match</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #a76130" x="422.362205" y="358.150367" transform="rotate(-0 422.362205 358.150367)">Unmapped</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="422.362205" y="370.616398" transform="rotate(-0 422.362205 370.616398)">Retain span + status</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #a76130" x="371.338583" y="358.99435" transform="rotate(-0 371.338583 358.99435)">non-match</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 8.4px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #a76130" x="19.84252" y="285.583438" transform="rotate(-0 19.84252 285.583438)">Retrieval retry</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(19.84252 301.451043)">No strong candidate:</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(19.84252 310.357918)">reformulate → retrieve</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #263747" transform="translate(19.84252 319.264793)">(up to 2 rounds).</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="19.84252" y="341.136083" transform="rotate(-0 19.84252 341.136083)">Applies to retrieval in a</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(11.338583 431.56128)">Translated illustrative excerpt: “BP 165/110 mmHg; serum CRP 12 mg/L;</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(11.338583 440.06233)">bilateral lung crackles; history of heart failure.”</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #233f5b" x="14.173228" y="465.293563" transform="rotate(-0 14.173228 465.293563)">Concept</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #233f5b" x="225.354331" y="465.293563" transform="rotate(-0 225.354331 465.293563)">Assertion / time</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #233f5b" x="296.220472" y="465.293563" transform="rotate(-0 296.220472 465.293563)">Value</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #233f5b" x="350.07874" y="465.293563" transform="rotate(-0 350.07874 465.293563)">Specimen</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #233f5b" x="411.023622" y="465.293563" transform="rotate(-0 411.023622 465.293563)">Subject</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #233f5b" x="473.385827" y="465.293563" transform="rotate(-0 473.385827 465.293563)">Site</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="14.173228" y="481.451043" transform="rotate(-0 14.173228 481.451043)">Systolic blood pressure</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="225.354331" y="481.451043" transform="rotate(-0 225.354331 481.451043)">Examination</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="296.220472" y="481.451043" transform="rotate(-0 296.220472 481.451043)">165</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="350.07874" y="481.451043" transform="rotate(-0 350.07874 481.451043)">—</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="411.023622" y="481.451043" transform="rotate(-0 411.023622 481.451043)">Patient</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="473.385827" y="481.451043" transform="rotate(-0 473.385827 481.451043)">—</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="14.173228" y="496.191201" transform="rotate(-0 14.173228 496.191201)">Diastolic blood pressure</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="225.354331" y="496.191201" transform="rotate(-0 225.354331 496.191201)">Examination</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="296.220472" y="496.191201" transform="rotate(-0 296.220472 496.191201)">110</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="350.07874" y="496.191201" transform="rotate(-0 350.07874 496.191201)">—</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="411.023622" y="496.191201" transform="rotate(-0 411.023622 496.191201)">Patient</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="473.385827" y="496.191201" transform="rotate(-0 473.385827 496.191201)">—</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="14.173228" y="510.931358" transform="rotate(-0 14.173228 510.931358)">C-reactive protein measurement</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="225.354331" y="510.931358" transform="rotate(-0 225.354331 510.931358)">Examination</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="296.220472" y="510.931358" transform="rotate(-0 296.220472 510.931358)">12</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="350.07874" y="510.931358" transform="rotate(-0 350.07874 510.931358)">Serum</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="411.023622" y="510.931358" transform="rotate(-0 411.023622 510.931358)">Patient</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="473.385827" y="510.931358" transform="rotate(-0 473.385827 510.931358)">—</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="14.173228" y="525.671516" transform="rotate(-0 14.173228 525.671516)">Respiratory crackles</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="225.354331" y="525.671516" transform="rotate(-0 225.354331 525.671516)">Present</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="296.220472" y="525.671516" transform="rotate(-0 296.220472 525.671516)">—</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="350.07874" y="525.671516" transform="rotate(-0 350.07874 525.671516)">—</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="411.023622" y="525.671516" transform="rotate(-0 411.023622 525.671516)">Patient</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="473.385827" y="525.671516" transform="rotate(-0 473.385827 525.671516)">Both lungs</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="14.173228" y="540.411673" transform="rotate(-0 14.173228 540.411673)">Heart failure</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="225.354331" y="540.411673" transform="rotate(-0 225.354331 540.411673)">History</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="296.220472" y="540.411673" transform="rotate(-0 296.220472 540.411673)">—</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="350.07874" y="540.411673" transform="rotate(-0 350.07874 540.411673)">—</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="411.023622" y="540.411673" transform="rotate(-0 411.023622 540.411673)">Patient</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #263747" x="473.385827" y="540.411673" transform="rotate(-0 473.385827 540.411673)">—</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: end; fill: #a76130" x="507.401575" y="562.238445" transform="rotate(-0 507.401575 562.238445)">Benefit not established</text>
+   </g>
+   <g id="text_73">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="11.338583" y="578.257398" transform="rotate(-0 11.338583 578.257398)">Failures</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="11.338583" y="590.017972" transform="rotate(-0 11.338583 590.017972)">Development cases</text>
+   </g>
+   <g id="text_75">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="113.385827" y="578.257398" transform="rotate(-0 113.385827 578.257398)">Draft strategies</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(113.385827 590.017972)">Trigger · action</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(113.385827 597.939272)">· example</text>
+   </g>
+   <g id="text_77">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="215.433071" y="578.257398" transform="rotate(-0 215.433071 578.257398)">Quality review</text>
+   </g>
+   <g id="text_78">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(215.433071 590.017972)">Consistency check</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; fill: #60717d" transform="translate(215.433071 597.939272)">+ manual approval</text>
+   </g>
+   <g id="text_79">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="317.480315" y="578.257398" transform="rotate(-0 317.480315 578.257398)">Strategy library</text>
+   </g>
+   <g id="text_80">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="317.480315" y="590.017972" transform="rotate(-0 317.480315 590.017972)">Version controlled</text>
+   </g>
+   <g id="text_81">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #237c80" x="419.527559" y="578.257398" transform="rotate(-0 419.527559 578.257398)">Later cases</text>
+   </g>
+   <g id="text_82">
+    <text style="font-size: 8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #60717d" x="419.527559" y="590.017972" transform="rotate(-0 419.527559 590.017972)">Selective injection</text>
+   </g>
+  </g>
+  <g id="text_83">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="11.338583" y="17.86077" transform="rotate(-0 11.338583 17.86077)">a</text>
+  </g>
+  <g id="text_84">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="28.346457" y="17.86077" transform="rotate(-0 28.346457 17.86077)">From Chinese clinical text to structured intermediate records</text>
+  </g>
+  <g id="text_85">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="11.338583" y="191.62455" transform="rotate(-0 11.338583 191.62455)">b</text>
+  </g>
+  <g id="text_86">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="28.346457" y="191.62455" transform="rotate(-0 28.346457 191.62455)">Conditional verification and bounded correction</text>
+  </g>
+  <g id="text_87">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="11.338583" y="414.144235" transform="rotate(-0 11.338583 414.144235)">c</text>
+  </g>
+  <g id="text_88">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="28.346457" y="414.144235" transform="rotate(-0 28.346457 414.144235)">Six-attribute record example</text>
+  </g>
+  <g id="text_89">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="11.338583" y="562.963132" transform="rotate(-0 11.338583 562.963132)">d</text>
+  </g>
+  <g id="text_90">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', sans-serif; text-anchor: start; fill: #263747" x="28.346457" y="562.963132" transform="rotate(-0 28.346457 562.963132)">Exploratory strategy maintenance</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc066b9949d">
+   <rect x="0" y="0" width="518.740157" height="609.448819"/>
+  </clipPath>
+ </defs>
+</svg>

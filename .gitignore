@@ -12,12 +12,12 @@ cookies*
 session_state*
 storage_state*
 
-# Local data and database dumps; keep synthetic fixtures under examples/tests
+# Local-only data; the shipped evaluation data lives in data/ (committed)
 private/
 local/
-data/
-patients/
-records/
+extract_cache.json
+experience_strategies.jsonl
+experience_drafts.jsonl
 *.dump
 *.backup
 *.sqlite

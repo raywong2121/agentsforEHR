@@ -1,0 +1,6 @@
+# Runtime: Python 3.9+ standard library only for the offline paths.
+# The full pipeline additionally requires:
+#   - a `psql` client binary on PATH (PostgreSQL client tools)
+#   - an OMOP vocabulary PostgreSQL instance (see README)
+#   - a model endpoint: DeepSeek-compatible API or Dify console
+# No pip packages are required for eval / tests / data processing.
